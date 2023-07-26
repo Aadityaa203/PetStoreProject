@@ -15,3 +15,37 @@ body {
   top: 0;
   position: absolute;
 }
+/* Home page CSS */
+#home {
+  margin: 0;
+  padding: 0;
+}
+/* .home-background {
+  background-image: url(./images/cat\ and\ dog.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+} */
+
+.welcome {
+  font-size: 35px;
+}
+.logo-name {
+  font-family: "Foldit", cursive;
+  font-family: "Kalam", cursive;
+  font-family: "Playfair", serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Source Code Pro", monospace;
+  font-family: "Bungee Spice", cursive;
+  /* margin-right: 280px; */
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 992px) {
+  #navbarSupportedContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
