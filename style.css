@@ -4,8 +4,8 @@ body {
 }
 
 .google-map {
-  padding-bottom: 50%;
-  position: relative;
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 .google-map iframe {
@@ -13,13 +13,17 @@ body {
   width: 100%;
   left: 0;
   top: 0;
-  position: absolute;
+  /* position: absolute; */
 }
 /* Home page CSS */
 #home {
   margin: 0;
   padding: 0;
 }
+.contact-page {
+  background-color: rgb(159, 204, 204);
+}
+
 /* .home-background {
   background-image: url(./images/cat\ and\ dog.jpeg);
   background-repeat: no-repeat;
