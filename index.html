@@ -14,10 +14,12 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- External CSS page -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 </head>
 
 <body>
-    <nav id="top-navbar" class="navbar bg-secondary navbar-expand-lg navbar-light p-3">
+    <nav id="top-navbar" class="navbar navbar-expand-lg navbar-light p-2 fixed-top">
         <a class="navbar-brand" href="#">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +32,7 @@
                     <a class="nav-link" href="#aboutUs">About Us <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link" href="#services">Services</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -38,9 +40,9 @@
                         View More
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#products">products</a>
-                        <a class="dropdown-item" href="#services">Services</a>
                         <a class="dropdown-item" href="#adoption">Adoption</a>
+                        <a class="dropdown-item" href="#products">products</a>
+                        <a class="dropdown-item" href="./contact.html">contact</a>
                     </div>
                 </li>
             </ul>
@@ -57,25 +59,24 @@
 
 
     <!-- main body starts here -->
-    <div class="main-body">
+    <div class="main-body m-2 p-4">
 
         <!-- home starts here -->
-        <div class="container-fluid m-2 p-2" id="home">
+        <div class="container-fluid m-2 pt-4 p-2" id="home">
             <div class="home-background">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <p class="text-bold"> <span class="welcome"> Welcome </span>to our pet store, where tails wag
-                            and
-                            purrs abound! At <span class="bg-info"> Happy Pets Store</span>, we are passionate
+                    <div class="col-lg-12  mt-5">
+                        <p> <span class="welcome"> Welcome to our pet store</span>, where tails swag and
+                            purrs abound! At <span class="welcome"> Happy Pets Store</span>, we are passionate
                             about providing the best products and services for your beloved furry friends. Our homepage
                             is a
-                            gateway to a world of delightful pet experiences, offering a glimpse of the love and care we
-                            shower
+                            gateway to a world of delightful pet experiences, offering a glimpse of the love and care
+                            weshower
                             upon our adorable companions. Feast your eyes on a captivating gallery of both dogs and
                             cats,
-                            eagerly waiting for their forever homes. </p>
-                        <p> Explore our wide selection of high-quality pet food,
-                            toys,
+                            eagerly waiting for their forever homes.
+                        </p>
+                        <p> Explore our wide selection of high-quality pet food,toys,
                             and accessories, specially curated to meet the unique needs of your cherished companions.
                             Whether
                             you're a doting dog owner or a devoted cat parent, we have everything you need to make your
@@ -86,9 +87,10 @@
                         </p>
                     </div>
                 </div>
+                <br>
                 <!-- table of what services we offer starts here -->
                 <!-- Section: Text -->
-                <h4 class="text-uppercase">Hey, Check What do we offer here!</h4>
+                <h4 class="text-uppercase h4">Hey, Check What do we offer here!</h4>
                 <!-- Section: Text -->
                 <div class="table">
                     <table class="table table-sm">
@@ -123,22 +125,23 @@
                     </table>
                 </div>
             </div>
+            <br>
             <!-- Cute images of some cats and dogs -->
             <div class="text-center mt-3">
                 <h3>Here are some of our cute companions</h3>
             </div>
             <div class="row">
-                <div class="col-md-3">
-                    <img src="./images/homeimage1.avif" alt="" style="height: 20vh; width:100%">
+                <div class="col-md">
+                    <img src="./images/homeimage1.avif" alt="" style="height: 40vh; width:100%">
                 </div>
-                <div class="col-md-3">
-                    <img src="./images/homeimage2.avif" alt="" style="height: 20vh; width:100%">
+                <div class="col-md">
+                    <img src="./images/homeimage2.avif" alt="" style="height: 40vh; width:100%">
                 </div>
-                <div class="col-md-3">
-                    <img src="./images/homeimage3.avif" alt="" style="height: 20vh; width:100%">
+                <div class="col-md">
+                    <img src="./images/homeimage3.avif" alt="" style="height: 40vh; width:100%">
                 </div>
-                <div class="col-md-3">
-                    <img src="./images/homeimage4.avif" alt="" style="height: 20vh; width:100%">
+                <div class="col-md">
+                    <img src="./images/homeimage4.avif" alt="" style="height: 40vh; width:100%">
                 </div>
             </div>
         </div>
@@ -241,64 +244,269 @@
             </div>
         </div>
 
-
-        <!-- contact Us page starts here -->
-        <div class="container-fluid m-2 p-2" id="contact">
-            <!-- Google maps -->
-            <div class="text-center">
-                <h2>Store location</h2>
+        <!-- Services page starts from here  -->
+        <div id="services" style="width:100vw" style="height: 20vh;">
+            <div class="service-paragraph mt-4">
+                <p class="m-3">Here at our Happy Pet Store, we go above and beyond to cater to the needs of both dogs
+                    and cats, ensuring they receive top-notch care and attention. For dogs, our services include a
+                    comprehensive range of training options, from professional dog training classes to one-on-one
+                    obedience sessions. We believe that a well-trained dog is a happy dog, and our experienced trainers
+                    are dedicated to helping your canine companion develop good behavior and social skills.
+                    Additionally, our vet care services offer everything your furry friend requires to stay in optimal
+                    health. From routine wellness exams and vaccinations to specialized treatments and post-operative
+                    care, our skilled veterinarians are committed to providing the best medical attention to keep your
+                    dog healthy and thriving.</p>
             </div>
-            <div class="google-map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3090.6111768697397!2d-84.37845712410453!3d39.228995627070574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8840536f0dec042f%3A0x54c665d266579f3e!2sKable%20Academy!5e0!3m2!1sen!2sus!4v1690313278423!5m2!1sen!2sus"
-                    width="600" height="100" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-            <div class="container-fluid contact-page">
+            <div class="container-fluid">
+                <h3 class="text-center m-3">Some of the services we provide for both Cats and Dogs</h3>
                 <div class="row">
-                    <form action="chudaa203@gmail.com" class="col-md-4">
-                        <div class="form-group">
-                            <label for="exampleFormControlFile1">
-                                <h4>contact us for any inquiry</h4> Questions/ Comments/ Feedbacks?
-                            </label>
-                            <label for="exampleInputEmail1">Enter your email</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Enter email">
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                                else.</small>
-                            <label for="exampleFormControlTextarea1">Example textarea</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Questions?</label> <br>
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Comments?</label> <br>
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Feedbacks?</label> <br>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </div>
-                    </form>
-                    <div class="col-md-4 ml-4 pl-4">
-                        <div class="card-info">
-                            <h2>hours of operations:</h2>
-                            <ul>
-                                <li>Mon-Fri 9am-5pm</li><br>
-                                <li>Saturday 7am- 6pm</li><br>
-                                <li>Sunday Closed</li><br>
-                                <li>Times differ on national holidays</li><br>
-                                <small>contact us for questions about hours of operations</small>
-                            </ul>
-
+                    <div class="col-md-4 mt-2 mb-3">
+                        <h5>Training</h5>
+                        <ul>
+                            <li>Professional dog training classes</li>
+                            <li>Personalized obedience training sessions</li>
+                            <li>Puppy socialization programs</li>
+                            <li>Behavior modification consultations</li>
+                        </ul>
+                        <div class="service-image">
+                            <img src="./images/services/dogtraining.jpeg" style="width: 100%; height: 40vh"
+                                alt="Training animals">
                         </div>
                     </div>
-                    <div class="cl-md-4">
-                        <h5>Want us to make any changes to the page?</h5><br>
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1"><br>
-                        <button type="submit" class="btn btn-primary">Submit</button><br>
+                    <div class="col-md-4 mt-2 mb-3">
+                        <h5>Vet Care</h5>
+                        <ul>
+                            <li>Comprehensive wellness exams</li>
+                            <li>Vaccinations and preventive care</li>
+                            <li>Diagnosis and treatment of illnesses</li>
+                            <li>Surgical procedures and post-operative care</li>
+                        </ul>
+                        <div class="service-image">
+                            <img src="./images/services/catanddogvet.jpeg" style="width: 100%; height: 40vh"
+                                alt="Vet care for dogs and cats">
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-2 mb-3">
+                        <h5>Gromming</h5>
+                        <ul>
+                            <li>Full-service grooming for dogs and cats</li>
+                            <li>Bathing and blow-drying</li>
+                            <li>Haircuts and styling</li>
+                            <li>Nail trimming and paw pad care</li>
+                        </ul>
+                        <div class="service-image">
+                            <img src="./images/services/doggrommimg.jpeg" style="width: 100%; height: 40vh"
+                                alt="gromming animals">
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-1 mb-3">
+                        <h5>Dental care</h5>
+                        <ul>
+                            <li>Dental exams and cleanings</li>
+                            <li>Treatment for dental issues (e.g., plaque, tartar, bad breath)</li>
+                            <li>Extractions and fillings</li>
+                            <li>Dental health products and recommendations</li>
+                        </ul>
+                        <div class="service-image">
+                            <img src="./images/services/catdental.jpeg" style="width: 100%; height: 40vh"
+                                alt="dental care">
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-1 mb-3">
+                        <h5>Flea Treatments</h5>
+                        <ul>
+                            <li>Flea and tick prevention products</li>
+                            <li>Flea baths and treatments</li>
+                            <li>Recommendations for flea control in the home</li>
+                            <li>Advice on managing and preventing infestations</li>
+                        </ul>
+                        <div class="service-image">
+                            <img src="./images/services/flea-tick.jpeg" style="width: 100%; height: 40vh" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-1 mb-3">
+                        <h5>Pet boarding and Daycare</h5>
+                        <ul>
+                            <li>Safe and comfortable environment for pets</li>
+                            <li>Professional staff providing attentive care and exercise</li>
+                            <li>Spacious play areas and cozy resting spots</li>
+                            <li>Suitable for both cats and dogs during short or extended periods of absence.</li>
+                        </ul>
+                        <div class="service-image">
+                            <img src="./images/services/daycare.webp" style="width: 100%; height: 40vh" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="services-bottom-paragraph">
+                    <p class="m-2">Cats are equally valued members of our pet-loving family, and we have designed a host
+                        of services to meet their unique needs. Our grooming services extend to our feline friends,
+                        offering full-service grooming that includes bathing, haircuts, and nail trimming. We understand
+                        that cats may require a gentler approach, and our groomers are well-trained to ensure your cat's
+                        grooming experience is as stress-free and enjoyable as possible. Additionally, our dental care
+                        services for cats are designed to maintain their oral health and prevent dental issues. Regular
+                        dental exams, cleanings, and recommendations for dental health products ensure your feline's
+                        teeth remain in tip-top shape. Whether it's a purring cat or a wagging dog, our pet store
+                        provides the finest services to keep your beloved companions happy, healthy, and cherished.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Adoption page starts here -->
+        <div class="container-fluid m-2 p-2" id="adoption">
+            <!-- Quote -->
+            <h4 class="text-center text-bold">"Adopt a pet, gain a friend, and find love that knows no
+                end."</h4>
+            <!-- paragraph and pet adoption award -->
+            <div class="container-fluid adoption-paragraph m-4">
+                <div class="row">
+                    <div class="col-md-8">
+                        <p class="adopt-para" style="height: 30vh;" width="400vw">Adoption is a heartwarming journey
+                            that changes lives, both for the adopted pet and the
+                            adopter
+                            At our pet store, we celebrate the profound impact of adoption, as it brings joy, love, and
+                            compassion into homes. Through adoption, you open your heart and home to a deserving animal,
+                            offering them a second chance at a happy life. Our adoption process is thoughtfully designed
+                            to
+                            ensure the perfect match between pet and owner, fostering lifelong bonds of trust and
+                            companionship. Each adopted pet becomes a treasured family member, enriching lives with
+                            their
+                            unconditional love and loyalty. As advocates of adoption, we take immense pride in playing a
+                            role in uniting pets with their forever homes, creating countless heartwarming stories of
+                            hope
+                            and transformation. Join us on this beautiful journey of rescue and love, and together,
+                            let's
+                            make a difference in the lives of animals, one adoption at a time.
+                        </p>
+                    </div>
+                    <!-- pet award card -->
+                    <div class="col-md-4">
+                        <img src="./images/adoption/pet-adoptioncertificate.png" style="height: 30vh;" width="400vw"
+                            alt="pet adoption certificate">
                     </div>
                 </div>
+            </div>
+
+
+            <!-- Adoption images starts here -->
+            <!--  some of the images of cats and dogs ready to go home -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 choose-me  text-center">
+                        <img src="./images/adoption/2.jpeg" class="adoption-image" alt="Cats and dogs images">
+                        <blockquote>"Adopt, don't shop: Rescue a pet and change a life forever."</blockquote>
+                        <button class="btn btn-primary text-white adoption-button" type="submit">Submit</button>
+                    </div>
+                    <div class="col-md-4 choose-me">
+                        <img src="./images/adoption/adoptme.webp" class="adoption-image" alt="Adopt me image">
+                    </div>
+                    <div class="col-md-4 choose-me  text-center">
+                        <img src="./images/adoption/pets.jpeg" class="adoption-image" alt="cute cats and dogs">
+                        <blockquote>"Open your heart, adopt a pet, and discover unconditional love."</blockquote>
+                        <button class="btn btn-primary text-white adoption-button" type="submit">Submit</button>
+                    </div>
+                    <div class="col-md-4 choose-me  text-center">
+                        <img src="./images/adoption/puppies.jpeg" class="adoption-image" alt="cute puppies">
+                        <blockquote>"Adoption is love in action - embrace a new furry family member."</blockquote>
+                        <button class="btn btn-primary text-white adoption-button" type="submit">Submit</button>
+                    </div>
+                    <div class="col-md-4 choose-me  text-center">
+                        <img src="./images/adoption/pets2.jpeg" class="adoption-image" alt="cats and dogs images">
+                        <blockquote>"Give a second chance, adopt a pet, and make a forever home."</blockquote>
+                        <button class="btn btn-primary text-white adoption-button" type="submit">Submit</button>
+                    </div>
+                    <div class="col-md-4 choose-me  text-center">
+                        <img src="./images/adoption/kittens.jpeg" class="adoption-image" alt="cute kittens">
+                        <blockquote>"From shelter to home, adoption brings joy, tail wags, and purrs."</blockquote>
+                        <button class="btn btn-primary text-white adoption-button" type="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- cards starts here -->
+            <!-- 4 ready to roll cute companions  -->
+            <div class="container-fluid">
+                <div>
+                    <H4 class="text-center m-4 pt-3">Some of our ready to roll companions</H4>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img class="card-img-top" src="./images/adoption/cardimages/kitten.jpeg"
+                                alt="Cute kitten for adoption" style="height: 30vh; width: 100%">
+                            <div class="card-body">
+                                <h5 class="card-title">"Find Your Forever Friend: Adopt a Pet!"</h5>
+                                <p class="card-text">"Embrace the joy of adoption and give a shelter pet a second chance
+                                    at love.Companions are waiting to be welcomed into loving homes, where
+                                    they can fill your days with unconditional love and endless happiness. Each adoption
+                                    story is a tale of hope, where a simple act of kindness becomes a
+                                    lifelong bond of companionship. Open your heart and experience the magic of adoption
+                                    today!".</p>
+                                <a href="#" class="btn btn-primary">Adopt me</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img class="card-img-top" src="./images/adoption/cardimages/puppy.jpeg"
+                                alt="Cute puppy for adoption" style="height: 30vh; width: 100%">
+                            <div class="card-body">
+                                <h5 class="card-title">"Adopt, Love, Repeat: Choose Adoption!"</h5>
+                                <p class="card-text">"Unlock the power of adoption and witness the extraordinary impact
+                                    it has on both your life and the life of a deserving pet. With every adoption, you
+                                    become a hero, offering a shelter pet a forever home filled with care and
+                                    compassion. Let your heart lead the way as you embark on a journey of friendship,
+                                    loyalty, and unwavering devotion. Together, we can make a difference, one paw at a
+                                    time."</p>
+                                <a href="#" class="btn btn-primary">Adopt me</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img class="card-img-top" src="./images/adoption/cardimages/cat.avif" alt="Cat for adoption"
+                                style="height: 30vh; width: 100%">
+                            <div class="card-body">
+                                <h5 class="card-title">"A Home for Every Heart: Adopt Today!"</h5>
+                                <p class="card-text">"Experience the unparalleled joy of adoption as you welcome a
+                                    companion into your life. Shelter pets come ready to wag
+                                    and hearts full of love, seeking a place to call their own.C hoosing adoption,
+                                    you provide comfort,creating memories that last forever. Join the countless families
+                                    who have found happiness through adoption, and
+                                    make your home a haven of love and laughter."</p>
+
+                                <a href="#" class="btn btn-primary">Adopt me</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img class="card-img-top" src="./images/adoption/cardimages/dog.jpeg" alt="Dog for adoption"
+                                style="height: 30vh; width: 100%">
+                            <div class="card-body">
+                                <h5 class="card-title">"Adopt a Lifetime of Happiness!"</h5>
+                                <p class="card-text">"Adoption is the key to unlocking a world of joy and fulfillment,
+                                    where hearts meet and souls connect with our companions. Our rescued pets have
+                                    stories of resilience and
+                                    love, waiting to add their chapter to your life's tale. As you adopt , you not only
+                                    save a life but gain a companion who will stand by your side through every moment of
+                                    life's journey. Discover the magic of adoption, and let the adventure begin!"</p>
+                                <a href="#" class="btn btn-primary">Adopt me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- the last adoption paragraph starts here -->
+            <div class="adoption-end-paragraph m-4">
+                <p>As the final chapter of adoption unfolds, the true magic begins—a lifetime of cherished memories,
+                    unwavering loyalty, and boundless affection. Every wagging tail and contented purr reaffirms the
+                    profound impact of this selfless act, turning a simple act of kindness into a lifelong bond of love
+                    and companionship. In the end, adoption is not just about finding a pet; it's about discovering a
+                    devoted friend who will forever hold a special place in your heart. Embrace the transformative power
+                    of adoption, and together, let's create a world where every pet finds their happily ever after.</p>
             </div>
         </div>
 
@@ -597,126 +805,73 @@
             </div>
         </div>
 
-        <!-- Services page starts from here  -->
-        <div id="services" style="width:100vw" style="height: 20vh;">
-            <div class="service-paragraph mt-4">
-                <p class="m-3">Here at our Happy Pet Store, we go above and beyond to cater to the needs of both dogs
-                    and cats, ensuring they receive top-notch care and attention. For dogs, our services include a
-                    comprehensive range of training options, from professional dog training classes to one-on-one
-                    obedience sessions. We believe that a well-trained dog is a happy dog, and our experienced trainers
-                    are dedicated to helping your canine companion develop good behavior and social skills.
-                    Additionally, our vet care services offer everything your furry friend requires to stay in optimal
-                    health. From routine wellness exams and vaccinations to specialized treatments and post-operative
-                    care, our skilled veterinarians are committed to providing the best medical attention to keep your
-                    dog healthy and thriving.</p>
-            </div>
-            <div class="container-fluid">
-                <h3 class="text-center m-3">Some of the services we provide for both Cats and Dogs</h3>
-                <div class="row">
-                    <div class="col-md-4 mt-2 mb-3">
-                        <h5>Training</h5>
-                        <ul>
-                            <li>Professional dog training classes</li>
-                            <li>Personalized obedience training sessions</li>
-                            <li>Puppy socialization programs</li>
-                            <li>Behavior modification consultations</li>
-                        </ul>
-                        <div class="service-image">
-                            <img src="./images/services/dogtraining.jpeg" style="width: 100%; height: 40vh"
-                                alt="Training animals">
-                        </div>
-                    </div>
-                    <div class="col-md-4 mt-2 mb-3">
-                        <h5>Vet Care</h5>
-                        <ul>
-                            <li>Comprehensive wellness exams</li>
-                            <li>Vaccinations and preventive care</li>
-                            <li>Diagnosis and treatment of illnesses</li>
-                            <li>Surgical procedures and post-operative care</li>
-                        </ul>
-                        <div class="service-image">
-                            <img src="./images/services/catanddogvet.jpeg" style="width: 100%; height: 40vh"
-                                alt="Vet care for dogs and cats">
-                        </div>
-                    </div>
-                    <div class="col-md-4 mt-2 mb-3">
-                        <h5>Gromming</h5>
-                        <ul>
-                            <li>Full-service grooming for dogs and cats</li>
-                            <li>Bathing and blow-drying</li>
-                            <li>Haircuts and styling</li>
-                            <li>Nail trimming and paw pad care</li>
-                        </ul>
-                        <div class="service-image">
-                            <img src="./images/services/doggrommimg.jpeg" style="width: 100%; height: 40vh"
-                                alt="gromming animals">
-                        </div>
-                    </div>
-                    <div class="col-md-4 mt-1 mb-3">
-                        <h5>Dental care</h5>
-                        <ul>
-                            <li>Dental exams and cleanings</li>
-                            <li>Treatment for dental issues (e.g., plaque, tartar, bad breath)</li>
-                            <li>Extractions and fillings</li>
-                            <li>Dental health products and recommendations</li>
-                        </ul>
-                        <div class="service-image">
-                            <img src="./images/services/catdental.jpeg" style="width: 100%; height: 40vh"
-                                alt="dental care">
-                        </div>
-                    </div>
-                    <div class="col-md-4 mt-1 mb-3">
-                        <h5>Flea Treatments</h5>
-                        <ul>
-                            <li>Flea and tick prevention products</li>
-                            <li>Flea baths and treatments</li>
-                            <li>Recommendations for flea control in the home</li>
-                            <li>Advice on managing and preventing infestations</li>
-                        </ul>
-                        <div class="service-image">
-                            <img src="./images/services/flea-tick.jpeg" style="width: 100%; height: 40vh" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-4 mt-1 mb-3">
-                        <h5>Pet boarding and Daycare</h5>
-                        <ul>
-                            <li>Safe and comfortable environment for pets</li>
-                            <li>Professional staff providing attentive care and exercise</li>
-                            <li>Spacious play areas and cozy resting spots</li>
-                            <li>Suitable for both cats and dogs during short or extended periods of absence.</li>
-                        </ul>
-                        <div class="service-image">
-                            <img src="./images/services/daycare.webp" style="width: 100%; height: 40vh" alt="">
-                        </div>
-                    </div>
 
-                </div>
-                <div class="services-bottom-paragraph">
-                    <p class="m-2">Cats are equally valued members of our pet-loving family, and we have designed a host
-                        of services to meet their unique needs. Our grooming services extend to our feline friends,
-                        offering full-service grooming that includes bathing, haircuts, and nail trimming. We understand
-                        that cats may require a gentler approach, and our groomers are well-trained to ensure your cat's
-                        grooming experience is as stress-free and enjoyable as possible. Additionally, our dental care
-                        services for cats are designed to maintain their oral health and prevent dental issues. Regular
-                        dental exams, cleanings, and recommendations for dental health products ensure your feline's
-                        teeth remain in tip-top shape. Whether it's a purring cat or a wagging dog, our pet store
-                        provides the finest services to keep your beloved companions happy, healthy, and cherished.
-                    </p>
+        <!-- contact Us page starts here -->
+        <div class="container-fluid m-4 p-2" id="contact">
+            <!-- Google maps -->
+            <div class="text-center">
+                <h2>Store location</h2>
+            </div>
+            <div class="google-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3090.6111768697397!2d-84.37845712410453!3d39.228995627070574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8840536f0dec042f%3A0x54c665d266579f3e!2sKable%20Academy!5e0!3m2!1sen!2sus!4v1690313278423!5m2!1sen!2sus">
+                </iframe>
+            </div>
+            <div class="container-fluid contact-page mt-5 pt-4">
+                <div class="row">
+                    <form action="chudaa203@gmail.com" class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlFile1">
+                                <h4>contact us for any inquiry</h4> Questions/ Comments/ Feedbacks?
+                            </label>
+                            <label for="exampleInputEmail1">Enter your email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                            <label for="exampleFormControlTextarea1">Example textarea</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Questions?</label> <br>
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Comments?</label> <br>
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Feedbacks?</label> <br>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                    <div class="col-md-5 ml-4 pl-4">
+                        <div class="card-info">
+                            <h2>hours of operations:</h2>
+                            <ul>
+                                <li>Mon-Fri 9am-5pm</li><br>
+                                <li>Saturday 7am- 6pm</li><br>
+                                <li>Sunday Closed</li><br>
+                                <li>Times differ on national holidays</li><br>
+                                <small>contact us for questions about hours of operations</small>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <h5>Want us to make any changes to the page?</h5><br>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1"><br>
+                        <button type="submit" class="btn btn-primary">Submit</button><br>
+                    </div>
                 </div>
             </div>
         </div>
-
 
     </div>
 
 
 
-
     <!-- Footer -->
-    <footer id="footer" class="bg-secondary text-center text-white mt-3">
+    <footer id="footer" class="text-center mt-3">
         <!-- Grid container -->
         <div class="container p-2">
-
             <!-- Section: Links -->
             <section class="">
                 <!--Grid row-->
@@ -756,10 +911,7 @@
             <div class="row">
                 <div class="col-md-4 mb-4 mb-md-0">
                     <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
-                        <img src="./images/cat3.avif" style="width:100px; height:30vh" class="w-100" />
-                        <a href="#!">
-                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
-                        </a>
+                        <img src="./images/cat3.avif" style="width:200px; height:24vh;" />
                     </div>
                 </div>
                 <!-- Grid column -->
@@ -804,10 +956,7 @@
                 <!-- image of dog in the footer -->
                 <div class="col-md-4 mb-4 mb-md-0">
                     <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
-                        <img src="./images/dog.jpeg" style="width:100px; height:30vh" class="w-100" />
-                        <a href="#!">
-                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
-                        </a>
+                        <img src="./images/dog.jpeg" style="width:200px; height:24vh;" />
                     </div>
                 </div>
             </div>

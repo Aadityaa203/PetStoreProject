@@ -1,28 +1,14 @@
-body {
-  margin: 0;
-  padding: 0;
-  /* background-image: url(./images/backgroundimage.jpeg); */
-}
+/* All generals */
 
-.google-map {
-  margin-bottom: 30px;
-  margin-top: 20px;
-}
+/* navbar */
 
-.google-map iframe {
-  height: 30%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  /* position: absolute; */
-}
 /* Home page CSS */
-#home {
-  margin: 0;
-  padding: 0;
-}
-.contact-page {
-  background-color: rgb(159, 204, 204);
+span.welcome {
+  margin: 10px;
+  font-family: "Belanosima", sans-serif;
+  font-family: "Bungee Spice", cursive;
+  font-family: "Foldit", cursive;
+  font-family: "Kalam", cursive;
 }
 
 /* .home-background {
@@ -71,4 +57,29 @@ body {
 .certificate {
   height: 20vh;
   width: 30vw;
+}
+
+/* contact CSS */
+.google-map {
+  margin-top: 20px;
+  height: 400px;
+}
+
+.google-map iframe {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  /* position: absolute; */
+}
+.contact-page {
+  background-color: rgb(224, 230, 230);
+}
+
+/* footer */
+#footer {
+  background-color: rgb(144, 148, 148);
+}
+.navbar {
+  background-image: linear-gradient(rgb(142, 142, 219), rgb(107, 228, 107));
 }
