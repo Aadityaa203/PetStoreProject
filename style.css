@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  /* background-image: url(./images/backgroundimage.jpeg); */
 }
 
 .google-map {
@@ -52,4 +53,22 @@ body {
     flex-direction: row;
     justify-content: space-between;
   }
+}
+.img-fluid {
+  margin: 20px;
+  width: 22vw;
+  height: 40vh;
+}
+.adoption-image {
+  height: 20vw;
+  width: 30vw;
+}
+.adoption-button {
+  background-color: hwb(93 13% 14%);
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.certificate {
+  height: 20vh;
+  width: 30vw;
 }
