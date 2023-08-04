@@ -179,7 +179,7 @@
             </div>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="mv col-md-6">
+                    <div class="mv col-md">
                         <h3>Mission</h3>
                         <p> <span class="p1"> "At </span>Happy Pet Store, our mission is to provide a loving and
                             nurturing environment for pets
@@ -195,7 +195,7 @@
                             happiness
                             for every pet that graces our store."</p>
                     </div>
-                    <div class="mv col-md-6">
+                    <div class="mv col-md">
                         <h3>Vision</h3>
                         <p> <span class="p1"> "Our </span>vision at Happy Pet Store is to be the leading destination for
                             pet lovers, where
@@ -220,7 +220,7 @@
             </div>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="employee col-md-3">
+                    <div class="employee col-md">
                         <p><span class="text-bold text-dark names">Sarah - Pet Adoption Specialist:</span> <br>
                             <span class="p1"> Sarah's</span> heart beats for rescuing animals in need. As our Pet
                             Adoption Specialist, she
@@ -233,7 +233,7 @@
                         </p>
                         <img class="pet-taker-images" src="./images/Aboutus:employees/Sarah.jpeg" alt="Sarah">
                     </div>
-                    <div class="employee col-md-3">
+                    <div class="employee col-md">
                         <p> <span class="text-bold text-dark names"> John - Pet Nutrition Guru:</span> <br>
                             <span class="p1"> John's </span>vast knowledge and expertise in pet nutrition make him the
                             go-to guy for all things
@@ -244,7 +244,7 @@
                         </p>
                         <img class="pet-taker-images" src="./images/Aboutus:employees/John.jpeg" alt="John">
                     </div>
-                    <div class="employee col-md-3">
+                    <div class="employee col-md">
                         <p><span class="text-bold text-dark names">Emma - Pet Styling Artist:</span> <br>
                             <span class="p1"> With</span> a keen eye for style and flair, Emma is our Pet Styling
                             Artist. She takes pet grooming
@@ -256,7 +256,7 @@
                         </p>
                         <img class="pet-taker-images" src="./images/Aboutus:employees/emma.jpeg" alt="Emma">
                     </div>
-                    <div class="employee col-md-3">
+                    <div class="employee col-md">
                         <p><span class="text-bold text-dark names">Michael - Pet Product Wizard:</span> <br>
                             <span class="p1"> Michael</span> is our resident Pet Product Wizard, responsible for
                             curating a diverse range of
@@ -425,7 +425,7 @@
             </div>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3 cards">
                         <div class="card">
                             <img class="card-img-top" src="./images/adoption/cardimages/kitten.jpeg"
                                 alt="Cute kitten for adoption">
@@ -441,7 +441,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 cards">
                         <div class="card">
                             <img class="card-img-top" src="./images/adoption/cardimages/puppy.jpeg"
                                 alt="Cute puppy for adoption">
@@ -457,7 +457,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 cards">
                         <div class="card">
                             <img class="card-img-top" src="./images/adoption/cardimages/cat.avif"
                                 alt="Cat for adoption">
@@ -475,7 +475,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 cards">
                         <div class="card">
                             <img class="card-img-top" src="./images/adoption/cardimages/dog.jpeg"
                                 alt="Dog for adoption">
@@ -573,11 +573,11 @@
                     strengthen the bond between you and your furry friends, making every moment a joyous one.</p>
             </div>
             <!-- Product Details Section -->
-            <div class="container m-1 mt-4">
+            <div class="container-fluid m-1 mt-4">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <!-- Add product image here -->
-                        <img src="./images/product page/cathouse.png" alt="Product Image">
+                        <img class="product-img" src="./images/product page/cathouse.png" alt="Product Image">
 
                         <!-- Add product details here -->
                         <h3>Cat House</h3>
@@ -600,28 +600,32 @@
                             </select>
                         </div>
                         <!-- Add 'Add to Cart' button  -->
-                        <button type="button" class="btn btn-primary">Add to Cart</button>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-primary">Add to Cart</button>
+                        </div>
                         <!-- Add customer reviews and ratings here -->
                         <h3 class="text-center">Customer Reviews</h3>
-                        <div class="media">
-                            <img src="./images/product page/customer-reviews-2.png" class="mr-3" alt="Customer Avatar"
-                                style="width: 100%; height: 80px;">
-                        </div>
-                        <div class="media-body">
-                            <h5 class="mt-0">Aaditya Acharya</h5>
-                            <p> <small> Best product in market. <br>Have Cats? you need this</small></p>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <h5 class="m-1">Aaditya Acharya</h5>
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <p> Best product in market. Have Cats? you need this</p>
+                            </div>
                         </div>
                     </div>
 
-
-
-
                     <!-- Dog house starts -->
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <!-- Add product image here -->
-                        <img src="./images/product page/doghouse.jpeg" alt="Product Image" class="img-fluid">
+                        <img src="./images/product page/doghouse.jpeg" alt="Product Image" class="product-img">
                         <!-- Add product details here -->
-                        <h4>Dog House</h4>
+                        <h3>Dog House</h3>
                         <p>"Give your feline friend the ultimate hideaway with our dog house toy – a cozy retreat
                             where
                             they can play, rest, and satisfy their natural curiosity. Featuring a durable design and
@@ -637,24 +641,24 @@
                                 <option value="large">Large</option>
                             </select>
                         </div>
-                        <!-- Add 'Add to Cart' button or 'Buy Now' button -->
-                        <button type="button" class="btn btn-primary">Add to Cart</button>
-
-
                         <!-- Product Reviews Section -->
-                        <div class="col-md-6 m-1">
-                            <div class="col-md-12">
-                                <!-- Add customer reviews and ratings here -->
-                                <h3>Customer Reviews</h3>
-                                <div class="media">
-                                    <img src="./images/product page/customer-reviews-2.png" class="mr-3"
-                                        alt="Customer Avatar" style="width: 200px; height: 84px;">
+                        <div class="text-center">
+                            <button type="button" class="btn btn-primary">Add to Cart</button>
+                        </div>
+                        <!-- Add customer reviews and ratings here -->
+                        <h3 class="text-center">Customer Reviews</h3>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <h5 class="m-1">Chandra Timsina</h5>
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
                                 </div>
-                                <div class="media-body">
-                                    <h5 class="mt-0">Chandra Timsina</h5>
-                                    <p> <small> Absolutely loved the dog house. It have sufficient room and looks
-                                            beautiful<br>Have Dogs? you need this</small></p>
-                                </div>
+                                <p> Absolutely loved the dog house. It have sufficient room and looks
+                                    beautiful Have Dogs? you need this</p>
                             </div>
                         </div>
                     </div>
@@ -662,263 +666,287 @@
 
                     <!-- the food section starts here -->
                     <!-- Cat food -->
-                    <div class="col-md-6">
-                        <div class="m-1">
-                            <!-- Add product image here -->
-                            <img src="./images/product page/catFood.webp" alt="Product Image" class="img-fluid">
+                    <div class="col-md-4">
+                        <!-- Add product image here -->
+                        <img src="./images/product page/catFood.webp" alt="Product Image" class="product-img">
+                        <!-- Add product details here -->
+                        <h3>Cat Food</h3>
+                        <p>"Satisfy your cat's cravings with our premium cat food. Nutritious, delicious, and
+                            specially
+                            crafted for their well-being, our cat food brings joy to every mealtime, ensuring a
+                            happy
+                            and healthy feline companion. This is also the best premium product in the market yet."</p>
+                        <p><strong>Price: $30.00</strong></p>
+                        <!-- Add product variations or size options if applicable -->
+                        <div class="form-group">
+                            <label for="productVariation">Select Size:</label>
+                            <select class="form-control" id="productVariation">
+                                <option value="small">Small</option>
+                                <option value="medium">Medium</option>
+                                <option value="large">Large</option>
+                            </select>
                         </div>
-                        <div class="col-md-4 m-1">
-                            <!-- Add product details here -->
-                            <h4>Cat Food</h4>
-                            <p>"Satisfy your cat's cravings with our premium cat food. Nutritious, delicious, and
-                                specially
-                                crafted for their well-being, our cat food brings joy to every mealtime, ensuring a
-                                happy
-                                and healthy feline companion."</p>
-                            <p><strong>Price: $30.00</strong></p>
-                            <!-- Add product variations or size options if applicable -->
-                            <div class="form-group">
-                                <label for="productVariation">Select Size:</label>
-                                <select class="form-control" id="productVariation">
-                                    <option value="small">Small</option>
-                                    <option value="medium">Medium</option>
-                                    <option value="large">Large</option>
-                                </select>
-                            </div>
-                            <!-- Add 'Add to Cart' button or 'Buy Now' button -->
+                        <!-- Add 'Add to Cart' button or 'Buy Now' button -->
+                        <div class="text-center">
                             <button type="button" class="btn btn-primary">Add to Cart</button>
                         </div>
 
-                        <!-- Product Reviews Section -->
-                        <div class="col-md-3 mt-4 m-1">
-                            <div class="col-md-12">
-                                <!-- Add customer reviews and ratings here -->
-                                <h3>Customer Reviews</h3>
-                                <div class="media">
-                                    <img src="./images/product page/customer-reviews-2.png" class="mr-3"
-                                        alt="Customer Avatar" style="width: 200px; height: 84px;">
+                        <!-- Add customer reviews and ratings here -->
+                        <h3 class="text-center">Customer Reviews</h3>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <h5 class="m-1">Chandra Timsina</h5>
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
                                 </div>
-                                <div class="media-body">
-                                    <h5 class="mt-0">Prisha America</h5>
-                                    <p> <small> "Delicious and nutritious; my dog loves it!" highly recommended</small>
-                                    </p>
-                                </div>
+                                <p>"Delicious and nutritious; my dog loves it!" highly recommended</p>
                             </div>
                         </div>
                     </div>
+
                     <!-- Dog food -->
-                    <div class="col-md-6">
-                        <div class=" m-1">
-                            <!-- Add product image here -->
-                            <img src="./images/product page/Dog food.webp" alt="Product Image" class="img-fluid">
+                    <div class="col-md-4">
+
+                        <!-- Add product image here -->
+                        <img src="./images/product page/Dog food.webp" alt="Product Image" class="product-img">
+
+                        <!-- Add product details here -->
+                        <h3>Dog Food</h3>
+                        <p>"Nourish your canine companion with our premium dog food. Packed with essential nutrients
+                            and
+                            mouthwatering flavors, our recipes cater to dogs of all ages and sizes, ensuring a
+                            tail-wagging dining experience every time."
+                        </p>
+                        <p><strong>Price: $40.00</strong></p>
+                        <!-- Add product variations or size options if applicable -->
+                        <div class="form-group">
+                            <label for="productVariation">Select Size:</label>
+                            <select class="form-control" id="productVariation">
+                                <option value="small">Small</option>
+                                <option value="medium">Medium</option>
+                                <option value="large">Large</option>
+                            </select>
                         </div>
-                        <div class="col-md-4 m-1">
-                            <!-- Add product details here -->
-                            <h4>Dog Food</h4>
-                            <p>"Nourish your canine companion with our premium dog food. Packed with essential nutrients
-                                and
-                                mouthwatering flavors, our recipes cater to dogs of all ages and sizes, ensuring a
-                                tail-wagging dining experience every time."</p>
-                            <p><strong>Price: $40.00</strong></p>
-                            <!-- Add product variations or size options if applicable -->
-                            <div class="form-group">
-                                <label for="productVariation">Select Size:</label>
-                                <select class="form-control" id="productVariation">
-                                    <option value="small">Small</option>
-                                    <option value="medium">Medium</option>
-                                    <option value="large">Large</option>
-                                </select>
-                            </div>
-                            <!-- Add 'Add to Cart' button or 'Buy Now' button -->
+                        <!-- Add 'Add to Cart' button or 'Buy Now' button -->
+                        <div class="text-center">
                             <button type="button" class="btn btn-primary">Add to Cart</button>
                         </div>
-
-                        <!-- Product Reviews Section -->
-                        <div class="col-md-3 mt-4 m-1">
-                            <div class="col-md-12">
-                                <!-- Add customer reviews and ratings here -->
-                                <h3>Customer Reviews</h3>
-                                <div class="media">
-                                    <img src="./images/product page/customer-reviews-2.png" class="mr-3"
-                                        alt="Customer Avatar" style="width: 200px; height: 84px;">
+                        <!-- Add customer reviews and ratings here -->
+                        <h3 class="text-center">Customer Reviews</h3>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <h5 class="m-1">Prishal Handsome</h5>
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
                                 </div>
-                                <div class="media-body">
-                                    <h5 class="mt-0">Prishal handsome</h5>
-                                    <p> <small> "Nourish your canine companion with our premium dog food. Packed with
-                                            essential nutrients and mouthwatering flavors, our recipes cater to dogs of
-                                            all
-                                            ages and sizes, ensuring a tail-wagging dining experience every
-                                            time."</small>
-                                    </p>
-                                </div>
+                                <p> "Nourish your canine companion with our premium dog food. Packed with
+                                    essential nutrients and mouthwatering flavors, our recipes cater to dogs of
+                                    all
+                                    ages and sizes, ensuring a tail-wagging dining experience every
+                                    time."
+                                </p>
                             </div>
                         </div>
                     </div>
 
                     <!-- cat collar+ harness -->
-                    <div class="col-md-6">
-                        <div class=" m-1">
-                            <!-- Add product image here -->
-                            <img src="./images/product page/catcollor.webp" alt="Product Image" class="img-fluid">
+                    <div class="col-md-4">
+                        <!-- Add product image here -->
+                        <img src="./images/product page/catcollor.webp" alt="Product Image" class="product-img">
+
+                        <!-- Add product details here -->
+                        <h3>Cat Collar and harness</h3>
+                        <p>"Adjustable cat Harness Vest Breathable Comfortable Pet Mesh Chest Strap cat
+                            Walking Leash For Small Medium cat and large cats" Comfortable Pet Mesh Chest Strap cat
+                            Walking Leash For Small Medium cat and large cats"</p>
+                        <p><strong>Price: $25.00</strong></p>
+                        <!-- Add product variations or size options if applicable -->
+                        <div class="form-group">
+                            <label for="productVariation">Select Size:</label>
+                            <select class="form-control" id="productVariation">
+                                <option value="small">Small cats</option>
+                                <option value="medium">Medium cats</option>
+                                <option value="large">Large cats</option>
+                            </select>
                         </div>
-                        <div class="col-md-4 m-1">
-                            <!-- Add product details here -->
-                            <h4>Cat Collar and harness</h4>
-                            <p>"Adjustable cat Harness Vest Breathable Comfortable Pet Mesh Chest Strap cat Walking
-                                Leash
-                                For Small Medium cat and large cats"</p>
-                            <p><strong>Price: $25.00</strong></p>
-                            <!-- Add product variations or size options if applicable -->
-                            <div class="form-group">
-                                <label for="productVariation">Select Size:</label>
-                                <select class="form-control" id="productVariation">
-                                    <option value="small">Small cats</option>
-                                    <option value="medium">Medium cats</option>
-                                    <option value="large">Large cats</option>
-                                </select>
-                            </div>
-                            <!-- Add 'Add to Cart' button or 'Buy Now' button -->
+                        <!-- Add 'Add to Cart' button or 'Buy Now' button -->
+                        <div class="text-center">
                             <button type="button" class="btn btn-primary">Add to Cart</button>
                         </div>
 
                         <!-- Product Reviews Section -->
-                        <div class="col-md-3 mt-4 m-1">
-                            <div class="col-md-12">
-                                <!-- Add customer reviews and ratings here -->
-                                <h3>Customer Reviews</h3>
-                                <div class="media">
-                                    <img src="./images/product page/customer-reviews-2.png" class="mr-3"
-                                        alt="Customer Avatar" style="width: 200px; height: 84px;">
+
+                        <!-- Add customer reviews and ratings here -->
+                        <h3>Customer Reviews</h3>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <h5 class="mt-0">Bhola Mann</h5>
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
                                 </div>
-                                <div class="media-body">
-                                    <h5 class="mt-0">Bhola Mann</h5>
-                                    <p> <small> "Excellent quality and value price for this harness vest. is soft
-                                            .Definitely, I will buy it again on different colors"</small>
-                                    </p>
-                                </div>
+                                <p> "Excellent quality and value price for this harness vest. is
+                                    soft .Definitely, I will buy it again on different colors. Definitely, I will buy it
+                                    again on different sizes."
+                                </p>
                             </div>
                         </div>
                     </div>
                     <!-- Dog Collar and harness -->
-                    <div class="col-md-6">
-                        <div class="m-1">
-                            <!-- Add product image here -->
-                            <img src="./images/product page/dog collar and harness.webp" alt="Product Image"
-                                class="img-fluid">
+                    <div class="col-md-4">
+                        <!-- Add product image here -->
+                        <img src="./images/product page/dog collar and harness.webp" alt="Product Image"
+                            class="product-img">
+                        <!-- Add product details here -->
+                        <h3>Dog Collar and harness</h3>
+                        <p>"No Pull Dog Harness & Leash Set: Reflective Oxford Fabric, Easy Control, Perfect for Pet
+                            Walking!"
+                            Oxford Fabric, Easy Control, Perfect for Pet Walking!""No Pull Dog Harness & Leash Set:buy
+                            it when it lasts.
+                        </p>
+                        <p><strong>Price: $45.00</strong></p>
+                        <!-- Add product variations or size options if applicable -->
+                        <div class="form-group">
+                            <label for="productVariation">Select Size:</label>
+                            <select class="form-control" id="productVariation">
+                                <option value="small">Small dogs</option>
+                                <option value="medium">Medium dogs</option>
+                                <option value="large">Large dogs</option>
+                            </select>
                         </div>
-                        <div class="col-md-4 m-1">
-                            <!-- Add product details here -->
-                            <h4>Dog Collar and harness</h4>
-                            <p>"No Pull Dog Harness & Leash Set: Reflective Oxford Fabric, Easy Control, Perfect for Pet
-                                Walking!"</p>
-                            <p><strong>Price: $45.00</strong></p>
-                            <!-- Add product variations or size options if applicable -->
-                            <div class="form-group">
-                                <label for="productVariation">Select Size:</label>
-                                <select class="form-control" id="productVariation">
-                                    <option value="small">Small dogs</option>
-                                    <option value="medium">Medium dogs</option>
-                                    <option value="large">Large dogs</option>
-                                </select>
-                            </div>
-                            <!-- Add 'Add to Cart' button or 'Buy Now' button -->
+                        <!-- Add 'Add to Cart' button or 'Buy Now' button -->
+                        <div class="text-center">
                             <button type="button" class="btn btn-primary">Add to Cart</button>
                         </div>
 
                         <!-- Product Reviews Section -->
-                        <div class="col-md-3 mt-4 m-1">
-                            <div class="col-md-12">
-                                <!-- Add customer reviews and ratings here -->
-                                <h3>Customer Reviews</h3>
-                                <div class="media">
-                                    <img src="./images/product page/customer-reviews-2.png" class="mr-3"
-                                        alt="Customer Avatar" style="width: 200px; height: 84px;">
+
+                        <!-- Add customer reviews and ratings here -->
+                        <h3>Customer Reviews</h3>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <h5 class="mt-1">Purnaa Mann</h5>
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
                                 </div>
-                                <div class="media-body">
-                                    <h5 class="mt-0">Purnaa Mann</h5>
-                                    <p> <small> "I love the handle on the leash! it's soft and padded so it won't hurt
-                                            my
-                                            wrist if she pulls a bit. the harness is just a tad tighter then I was
-                                            hoping it
-                                            world be, but it fits her."</small>
-                                    </p>
-                                </div>
+                                <p>"I love the handle on the leash! it's soft and padded so it won't hurt
+                                    my wrist if she pulls a bit. the harness is just a tad tighter then I
+                                    was hoping it world be, but it fits her."
+                                </p>
                             </div>
                         </div>
                     </div>
+                    <div class="product-bottom-paragraph mt-3">
+                        <p>Our passion for pets drives us to offer only the best products, ensuring your furry
+                            companions
+                            receive the love and care they deserve. At Happy Pet Store, we take pride in being a part of
+                            your pet's journey, from providing a cozy home to nourishing their bodies and supporting
+                            their
+                            adventures. With a commitment to excellence and the well-being of all pets, we welcome you
+                            to
+                            explore our pet-loving haven, where tails wag and purrs resound. Join our community of
+                            devoted
+                            pet parents, and together, let's create a world where pets thrive and cherished memories are
+                            made. Shop with us and experience the joy of being part of our pet-loving family!
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="product-bottom-paragraph">
-                <p>Our passion for pets drives us to offer only the best products, ensuring your furry companions
-                    receive the love and care they deserve. At Happy Pet Store, we take pride in being a part of
-                    your pet's journey, from providing a cozy home to nourishing their bodies and supporting their
-                    adventures. With a commitment to excellence and the well-being of all pets, we welcome you to
-                    explore our pet-loving haven, where tails wag and purrs resound. Join our community of devoted
-                    pet parents, and together, let's create a world where pets thrive and cherished memories are
-                    made. Shop with us and experience the joy of being part of our pet-loving family!</p>
-            </div>
-        </div>
-    </div>
+            <hr>
 
 
-    <!-- contact Us page starts here -->
-    <div class="contact-container m-4 p-2" id="contact">
-        <!-- Google maps -->
-        <div class="text-center">
-            <h2>Store location</h2>
-        </div>
-        <div class="google-map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3090.6111768697397!2d-84.37845712410453!3d39.228995627070574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8840536f0dec042f%3A0x54c665d266579f3e!2sKable%20Academy!5e0!3m2!1sen!2sus!4v1690313278423!5m2!1sen!2sus">
-            </iframe>
-        </div>
-        <div class="inquiry-container contact-page mt-5 pt-4">
-            <div class="row">
-                <form action="chudaa203@gmail.com" class="col-md-6">
-                    <div class="form-group">
-                        <label for="exampleFormControlFile1">
-                            <h4>contact us for any inquiry</h4> Questions/ Comments/ Feedbacks?
-                        </label>
-                        <label for="exampleInputEmail1">Enter your email</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="Enter email">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                            else.</small>
-                        <label for="exampleFormControlTextarea1">Example textarea</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Questions?</label> <br>
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Comments?</label> <br>
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Feedbacks?</label> <br>
+            <!-- contact Us page starts here -->
+            <div id="contact">
+                <h1 class="text-bold text-center text-uppercase mt-5">Contact page</h1>
+                <!-- Google maps -->
+                <div class="text-center">
+                    <h2>Store location</h2>
+                </div>
+                <div class="google-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3090.6111768697397!2d-84.37845712410453!3d39.228995627070574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8840536f0dec042f%3A0x54c665d266579f3e!2sKable%20Academy!5e0!3m2!1sen!2sus!4v1690313278423!5m2!1sen!2sus">
+                    </iframe>
+                </div>
+                <div class="container-fluid mt-4 contact-div">
+                    <div class="row">
+                        <form action="chudaa203@gmail.com" class="col-md-4 contactDiv">
+                            <div class="form-group">
+                                <label for="exampleFormControlFile1">
+                                    <h3 class="text-center text-uppercase">contact us for any inquiry</h3> Questions/
+                                    Comments/ Feedbacks?
+                                </label><br>
+                                <label for="exampleInputEmail1">Enter your email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-dark">We'll never share your email with
+                                    anyone else.</small>
+                                <label for="exampleFormControlTextarea1">Example textarea</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <div class="form-check">
+                                    <div class="container-fluid m-2">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Questions?</label>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Comments?</label>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Feedbacks?</label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="col-md-4 contactDiv">
+                            <div class="card-info text-center text-uppercase">
+                                <h2>hours of operations:</h2>
+                                <ul>
+                                    <li>Mon-Fri 9am-5pm</li><br>
+                                    <li>Saturday 7am- 6pm</li><br>
+                                    <li>Sunday Closed</li><br>
+                                    <li>Times differ on national holidays</li><br>
+                                    <small>contact us for questions about hours of operations</small>
+                                </ul>
+                            </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
-                </form>
-                <div class="col-md-5 ml-4 pl-4">
-                    <div class="card-info">
-                        <h2>hours of operations:</h2>
-                        <ul>
-                            <li>Mon-Fri 9am-5pm</li><br>
-                            <li>Saturday 7am- 6pm</li><br>
-                            <li>Sunday Closed</li><br>
-                            <li>Times differ on national holidays</li><br>
-                            <small>contact us for questions about hours of operations</small>
-                        </ul>
+                        <div class="col-md-4 contactDiv">
+                            <h5 class="text-uppercase">Want us to make any changes to the webpage?</h5><br>
 
+                            <label for="exampleFormControlTextarea1" class="text-center">
+                                <p class="mb-0">Write us your idea to make our page better</p>
+                            </label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea> <br>
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1"><br>
+                            <button type="submit" class="btn btn-primary">Submit</button><br>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-8">
-                    <h5>Want us to make any changes to the page?</h5><br>
-                    <input type="file" class="form-control-file" id="exampleFormControlFile1"><br>
-                    <button type="submit" class="btn btn-primary">Submit</button><br>
                 </div>
             </div>
         </div>
-    </div>
-
     </div>
 
 

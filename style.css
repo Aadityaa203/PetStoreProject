@@ -122,10 +122,20 @@ blockquote {
   width: 100%;
 }
 
+/* Product pages */
+.review-stars {
+  font-size: 25px;
+  color: #ffd700; /* Golden yellow color */
+}
+.product-img {
+  height: 380px;
+  width: 100%;
+}
+
 /* contact CSS */
 .google-map {
   margin-top: 20px;
-  height: 400px;
+  height: 50vh;
 }
 .google-map iframe {
   height: 100%;
@@ -139,6 +149,65 @@ blockquote {
 #footer {
   background-image: linear-gradient(rgb(142, 142, 219), rgb(107, 228, 107));
 }
+
+/* media query */
+/* Styles for devices with a minimum width of 576px (e.g., mobile landscape) */
+@media (min-width: 10px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  div.main-body.m-3 {
+    margin: 1px;
+    padding: auto;
+  }
+  .main-body {
+    margin: 1px;
+    padding: 0;
+  }
+  img.adoption-image {
+    height: 300px;
+    width: 80%;
+  }
+  .adoption-image1 {
+    height: 300px;
+    width: 100%;
+  }
+  .p1 {
+    margin-left: 0;
+  }
+  .welcome {
+    font-size: 15px;
+  }
+}
+/* Styles for devices with a minimum width of 768px (e.g., tablets) */
+/* @media (max-width: 375px) {
+  body {
+    padding: 0;
+  }
+  div.main-body.m-3 {
+    margin: 1px;
+    padding: 1px;
+  }
+  .main-body {
+    margin: 0;
+  }
+  img.adoption-image {
+    height: 300px;
+    width: 80%;
+  }
+  .adoption-image1 {
+    height: 300px;
+    width: 100%;
+  }
+  .p1 {
+    margin-left: 5px;
+  }
+  .welcome {
+    font-size: 15px;
+  }
+  
+} */
 
 /* .home-background {
   background-image: url(./images/cat\ and\ dog.jpeg);
@@ -160,4 +229,14 @@ blockquote {
 } */
 /* #footer {
   background-color: rgb(144, 148, 148);
+} */
+/* .contact-div{
+  height: 100%;
+  width: 100%;
+}
+.contactDiv{
+  margin-top: 20px;
+  padding: 20px;
+  height: 50vh;
+  width: 100vw;
 } */

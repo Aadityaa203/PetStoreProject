@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Store Reviews</title>
+  <!-- Add Bootstrap CSS link -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Add Font Awesome CSS link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* Add any custom CSS styles here */
+    .review {
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .review .author {
+      font-weight: bold;
+    }
+    .review .date {
+      font-style: italic;
+      color: #666;
+    }
+    .review .content {
+      margin-top: 10px;
+    }
+    .btn-review {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 8px 15px;
+      text-transform: uppercase;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .review-stars {
+      color: #FFD700; /* Golden yellow color */
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h2>Customer Reviews</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="review">
+          <p class="author">John Doe</p>
+          <p class="date">April 25, 2023</p>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+          </div>
+          <div class="review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <button class="btn btn-review">Leave a Review</button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="review">
+          <p class="author">Jane Smith</p>
+          <p class="date">April 20, 2023</p>
+          <div class="content">
+            <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel.</p>
+          </div>
+          <div class="review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <button class="btn btn-review">Leave a Review</button>
+        </div>
+      </div>
+      <!-- Add more reviews as needed -->
+    </div>
+  </div>
+
+  <!-- Add Bootstrap JS scripts at the end of the body -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
