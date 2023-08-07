@@ -233,3 +233,39 @@ blockquote {
     margin: 5px;
   }
 }
+
+/* JavaScript images */
+.jsImages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product {
+  width: calc(33.33% - 20px); /* Three items in a row with some spacing */
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.jsImages {
+  max-width: 100%;
+  height: auto;
+}
+
+/* media query for JS products */
+
+@media (max-width: 768px) {
+  /* Media query for smaller screens */
+  .product {
+    width: calc(50% - 20px); /* Two items in a row with some spacing */
+  }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 576px) {
+  .product {
+    width: 100%; /* Single item in a row */
+  }
+}
