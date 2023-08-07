@@ -201,7 +201,7 @@ blockquote {
   }
   .main-body {
     margin: 2px;
-    padding: 10px 200px;
+    padding: 10px 220px;
   }
 }
 
@@ -216,7 +216,7 @@ blockquote {
   }
   .main-body {
     margin: 5px;
-    padding: 30px;
+    padding: 5px 30px;
   }
 }
 
@@ -231,6 +231,5 @@ blockquote {
   }
   .main-body {
     margin: 5px;
-    padding: 30px;
   }
 }
