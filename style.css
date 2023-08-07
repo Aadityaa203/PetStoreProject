@@ -5,13 +5,11 @@ body {
   font-family: Arial, sans-serif;
   background-color: #848181;
   color: #fff;
-  padding: 20px;
+  padding: 0 auto;
 }
-.main-body {
-  margin: 0 auto;
-}
+
 hr {
-  margin: 2px;
+  margin: 22px;
   padding: 3px;
   background-color: aqua;
 }
@@ -20,9 +18,9 @@ hr {
   background-color: #ff5733;
   color: #fff;
   font-size: 18px;
-  padding: 10px 20px;
+  padding: 5px 10px;
   border: none;
-  border-radius: 5px;
+  border-radius: 7px;
   text-decoration: none;
   transition: background-color 0.3s ease;
   margin-bottom: 15px;
@@ -34,22 +32,17 @@ hr {
 .navbar {
   background-image: linear-gradient(rgb(142, 142, 219), rgb(107, 228, 107));
 }
-.text-success {
-  font-size: 40px;
-}
+/* .text-success {
+  font-size: 20px;
+} */
+
 p {
   font-size: 16px;
 }
 .p1 {
   margin-left: 15px;
 }
-@media only screen and (min-width: 992px) {
-  #navbarSupportedContent {
-    display: block;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
+
 /* Home page CSS */
 span.welcome {
   margin: 10px;
@@ -150,93 +143,94 @@ blockquote {
   background-image: linear-gradient(rgb(142, 142, 219), rgb(107, 228, 107));
 }
 
-/* media query */
-/* Styles for devices with a minimum width of 576px (e.g., mobile landscape) */
-@media (min-width: 10px) {
+/* MEDIA QUERY  for body*/
+@media (min-width: 0) {
+  /* All generals */
   body {
     margin: 0;
     padding: 0;
-  }
-  div.main-body.m-3 {
-    margin: 1px;
-    padding: auto;
+    font-family: Arial, sans-serif;
+    background-color: #848181;
+    color: #fff;
+    padding: 5px;
   }
   .main-body {
-    margin: 1px;
-    padding: 0;
-  }
-  img.adoption-image {
-    height: 300px;
-    width: 80%;
-  }
-  .adoption-image1 {
-    height: 300px;
-    width: 100%;
-  }
-  .p1 {
-    margin-left: 0;
-  }
-  .welcome {
-    font-size: 15px;
+    margin: 20px;
   }
 }
-/* Styles for devices with a minimum width of 768px (e.g., tablets) */
-/* @media (max-width: 375px) {
+@media (max-width: 100px) {
+  /* All generals */
   body {
+    margin: 0;
     padding: 0;
-  }
-  div.main-body.m-3 {
-    margin: 1px;
-    padding: 1px;
+    font-family: Arial, sans-serif;
+    background-color: #848181;
+    color: #fff;
+    padding: 5px;
   }
   .main-body {
+    margin: 10px;
+    padding: 15px;
+  }
+}
+@media (max-width: 200px) {
+  /* All generals */
+  body {
     margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #848181;
+    color: #fff;
+    padding: 20px;
   }
-  img.adoption-image {
-    height: 300px;
-    width: 80%;
+  .main-body {
+    margin: 15px;
+    padding: 50px;
   }
-  .adoption-image1 {
-    height: 300px;
-    width: 100%;
-  }
-  .p1 {
-    margin-left: 5px;
-  }
-  .welcome {
-    font-size: 15px;
-  }
-  
-} */
+}
 
-/* .home-background {
-  background-image: url(./images/cat\ and\ dog.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; 
-} */
-/* .certificate {
-  height: 10vh;
-  width: 30vw;
-} */
-/* .img-fluid {
-  margin: 20px;
-  width: 22vw;
-  height: 40vh;
-} */
-/* .contact-page {
-  background-color: rgb(224, 230, 230);
-} */
-/* #footer {
-  background-color: rgb(144, 148, 148);
-} */
-/* .contact-div{
-  height: 100%;
-  width: 100%;
+@media (min-width: 992px) {
+  #navbarSupportedContent {
+    display: block;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .navbar-expand-lg {
+    justify-content: flex-start;
+    flex-flow: wrap;
+  }
+  .main-body {
+    margin: 2px;
+    padding: 10px 200px;
+  }
 }
-.contactDiv{
-  margin-top: 20px;
-  padding: 20px;
-  height: 50vh;
-  width: 100vw;
-} */
+
+@media (max-width: 992px) {
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #848181;
+    color: #fff;
+    padding: 5px;
+  }
+  .main-body {
+    margin: 5px;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 1440px) {
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #848181;
+    color: #fff;
+    padding: 5px;
+  }
+  .main-body {
+    margin: 5px;
+    padding: 30px;
+  }
+}
