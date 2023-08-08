@@ -14,11 +14,12 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- External CSS page -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 </head>
 
-<body>
-    <nav id="top-navbar" class="navbar bg-secondary navbar-expand-lg navbar-light p-3">
-        <a class="navbar-brand" href="#">Home</a>
+<body onload="checkNumbersOfVisitors()">
+    <nav id="top-navbar" class="navbar navbar-expand-lg navbar-light p-2">
+        <a class="navbar-brand" href="./home.html">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -27,25 +28,25 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#aboutUs">About Us <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="./aboutus.html">About us <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link" href="#services">Services</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        View More
+                        Dropdown
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#products">products</a>
-                        <a class="dropdown-item" href="#services">Services</a>
-                        <a class="dropdown-item" href="#adoption">Adoption</a>
+                        <a class="dropdown-item" href="./adoption.html">Adoption</a>
+                        <a class="dropdown-item" href="./products.html">Products</a>
+                        <a class="dropdown-item" href="./contact.html">Contacts</a>
                     </div>
                 </li>
             </ul>
             <div class="logo-name">
-                <h1>Happy Pets Store</h1>
+                <h1 class="text-bold text-white text-uppercase">Happy Pets Store</h1>
             </div>
             <form action="./index.html" class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -58,10 +59,13 @@
 
     <!-- main body starts here -->
     <div class="main-body">
-        <!-- Services page starts here -->
-        <div id="services" style="width:100vw" style="height: 20vh;">
+        <!-- Services page starts from here  -->
+        <div id="services">
+            <!-- heading -->
+            <h1 class="text-bold text-center text-uppercase mt-5">Services</h1>
             <div class="service-paragraph">
-                <p class="m-3">Here at our Happy Pet Store, we go above and beyond to cater to the needs of both dogs
+                <p> <span class="p1"> Here </span>at our Happy Pet Store, we go above and beyond to cater to the needs
+                    of both dogs
                     and cats, ensuring they receive top-notch care and attention. For dogs, our services include a
                     comprehensive range of training options, from professional dog training classes to one-on-one
                     obedience sessions. We believe that a well-trained dog is a happy dog, and our experienced trainers
@@ -69,12 +73,13 @@
                     Additionally, our vet care services offer everything your furry friend requires to stay in optimal
                     health. From routine wellness exams and vaccinations to specialized treatments and post-operative
                     care, our skilled veterinarians are committed to providing the best medical attention to keep your
-                    dog healthy and thriving.</p>
+                    dog healthy and thriving.
+                </p>
             </div>
             <div class="container-fluid">
-                <h3 class="text-center m-3">Some of the services we provide for both Cats and Dogs</h3>
+                <h3 class="text-center">Some of the services we provide for both Cats and Dogs</h3>
                 <div class="row">
-                    <div class="col-md-4 mt-2 mb-3">
+                    <div class="col-md-4 mb-3">
                         <h5>Training</h5>
                         <ul>
                             <li>Professional dog training classes</li>
@@ -82,12 +87,11 @@
                             <li>Puppy socialization programs</li>
                             <li>Behavior modification consultations</li>
                         </ul>
-                        <div class="service-image">
-                            <img src="./images/services/dogtraining.jpeg" style="width: 100%; height: 40vh"
-                                alt="Training animals">
+                        <div>
+                            <img class="service-image" src="./images/services/dogtraining.jpeg" alt="Training animals">
                         </div>
                     </div>
-                    <div class="col-md-4 mt-2 mb-3">
+                    <div class="col-md-4 mb-3">
                         <h5>Vet Care</h5>
                         <ul>
                             <li>Comprehensive wellness exams</li>
@@ -95,12 +99,12 @@
                             <li>Diagnosis and treatment of illnesses</li>
                             <li>Surgical procedures and post-operative care</li>
                         </ul>
-                        <div class="service-image">
-                            <img src="./images/services/catanddogvet.jpeg" style="width: 100%; height: 40vh"
+                        <div>
+                            <img class="service-image" src="./images/services/catanddogvet.jpeg"
                                 alt="Vet care for dogs and cats">
                         </div>
                     </div>
-                    <div class="col-md-4 mt-2 mb-3">
+                    <div class="col-md-4 mb-3">
                         <h5>Gromming</h5>
                         <ul>
                             <li>Full-service grooming for dogs and cats</li>
@@ -108,37 +112,37 @@
                             <li>Haircuts and styling</li>
                             <li>Nail trimming and paw pad care</li>
                         </ul>
-                        <div class="service-image">
-                            <img src="./images/services/doggrommimg.jpeg" style="width: 100%; height: 40vh"
-                                alt="gromming animals">
+                        <div>
+                            <img class="service-image" src="./images/services/doggrommimg.jpeg" alt="gromming animals">
                         </div>
                     </div>
-                    <div class="col-md-4 mt-1 mb-3">
+                    <div class="col-md-4 mb-3">
                         <h5>Dental care</h5>
                         <ul>
                             <li>Dental exams and cleanings</li>
                             <li>Treatment for dental issues (e.g., plaque, tartar, bad breath)</li>
                             <li>Extractions and fillings</li>
                             <li>Dental health products and recommendations</li>
+                            <li>financial help</li>
                         </ul>
-                        <div class="service-image">
-                            <img src="./images/services/catdental.jpeg" style="width: 100%; height: 40vh"
-                                alt="dental care">
+                        <div>
+                            <img class="service-image" src="./images/services/catdental.jpeg" alt="dental care">
                         </div>
                     </div>
-                    <div class="col-md-4 mt-1 mb-3">
+                    <div class="col-md-4 mb-3">
                         <h5>Flea Treatments</h5>
                         <ul>
                             <li>Flea and tick prevention products</li>
                             <li>Flea baths and treatments</li>
                             <li>Recommendations for flea control in the home</li>
                             <li>Advice on managing and preventing infestations</li>
+                            <li>Happy to help anywhere</li>
                         </ul>
-                        <div class="service-image">
-                            <img src="./images/services/flea-tick.jpeg" style="width: 100%; height: 40vh" alt="">
+                        <div>
+                            <img class="service-image" src="./images/services/flea-tick.jpeg" alt="Service image">
                         </div>
                     </div>
-                    <div class="col-md-4 mt-1 mb-3">
+                    <div class="col-md-4 mb-3">
                         <h5>Pet boarding and Daycare</h5>
                         <ul>
                             <li>Safe and comfortable environment for pets</li>
@@ -146,14 +150,15 @@
                             <li>Spacious play areas and cozy resting spots</li>
                             <li>Suitable for both cats and dogs during short or extended periods of absence.</li>
                         </ul>
-                        <div class="service-image">
-                            <img src="./images/services/daycare.webp" style="width: 100%; height: 40vh" alt="">
+                        <div>
+                            <img class="service-image" src="./images/services/daycare.webp" alt="Pet daycare">
                         </div>
                     </div>
 
                 </div>
                 <div class="services-bottom-paragraph">
-                    <p class="m-2">Cats are equally valued members of our pet-loving family, and we have designed a host
+                    <p class="m-2"> <span class="p1"> Cats</span> are equally valued members of our pet-loving family,
+                        and we have designed a host
                         of services to meet their unique needs. Our grooming services extend to our feline friends,
                         offering full-service grooming that includes bathing, haircuts, and nail trimming. We understand
                         that cats may require a gentler approach, and our groomers are well-trained to ensure your cat's
@@ -167,14 +172,11 @@
             </div>
         </div>
     </div>
-
-
-
+    <hr>
     <!-- Footer -->
-    <footer id="footer" class="bg-secondary text-center text-white mt-3">
+    <footer id="footer" class="text-center mt-3">
         <!-- Grid container -->
-        <div class="container p-2">
-
+        <div class="footer-container mt-2 p-3">
             <!-- Section: Links -->
             <section class="">
                 <!--Grid row-->
@@ -214,10 +216,7 @@
             <div class="row">
                 <div class="col-md-4 mb-4 mb-md-0">
                     <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
-                        <img src="./images/cat3.avif" style="width:100px; height:30vh" class="w-100" />
-                        <a href="#!">
-                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
-                        </a>
+                        <img src="./images/footer-image/cat and dog1.webp" style="width:400px; height:24vh;" />
                     </div>
                 </div>
                 <!-- Grid column -->
@@ -262,10 +261,7 @@
                 <!-- image of dog in the footer -->
                 <div class="col-md-4 mb-4 mb-md-0">
                     <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
-                        <img src="./images/dog.jpeg" style="width:100px; height:30vh" class="w-100" />
-                        <a href="#!">
-                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
-                        </a>
+                        <img src="./images/footer-image/cat and dog.jpeg" style="width:400px; height:24vh;" />
                     </div>
                 </div>
             </div>
@@ -289,7 +285,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
         crossorigin="anonymous"></script>
-    <!-- external JS page -->
     <script src="test.js"></script>
 </body>
 

@@ -14,11 +14,12 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- External CSS page -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 </head>
 
-<body>
-    <nav id="top-navbar" class="navbar bg-secondary navbar-expand-lg navbar-light p-3">
-        <a class="navbar-brand" href="#">Home</a>
+<body onload="checkNumbersOfVisitors()">
+    <nav id="top-navbar" class="navbar navbar-expand-lg navbar-light p-2">
+        <a class="navbar-brand" href="./home.html">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -27,25 +28,25 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#aboutUs">About Us <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="./aboutus.html">About us <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link" href="./services.html">Services</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        View More
+                        Dropdown
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#products">products</a>
-                        <a class="dropdown-item" href="#services">Services</a>
-                        <a class="dropdown-item" href="#adoption">Adoption</a>
+                        <a class="dropdown-item" href="#adoption.html">Adoption</a>
+                        <a class="dropdown-item" href="./products.html">Products</a>
+                        <a class="dropdown-item" href="./contact.html">Contacts</a>
                     </div>
                 </li>
             </ul>
             <div class="logo-name">
-                <h1>Happy Pets Store</h1>
+                <h1 class="text-bold text-white text-uppercase">Happy Pets Store</h1>
             </div>
             <form action="./index.html" class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -58,88 +59,52 @@
 
     <!-- main body starts here -->
     <div class="main-body">
-        <!-- home starts here -->
-        <div class="container-fluid m-2 p-2" id="adoption">
+        <!-- Adoption page starts here -->
+        <div id="adoption">
+            <!-- heading -->
+            <h1 class="text-bold text-center text-uppercase mt-5">Adoption</h1>
             <!-- Quote -->
-            <h4 class="text-center text-bold">"Adopt a pet, gain a friend, and find love that knows no
-                end."</h4>
+            <h3 class="text-center text-bold">"Adopt a pet, gain a friend, and find love that knows no end."</h3>
             <!-- paragraph and pet adoption award -->
-            <div class="container-fluid adoption-paragraph m-4">
-                <div class="row">
-                    <div class="col-md-8">
-                        <p class="adopt-para" style="height: 30vh;" width="400vw">Adoption is a heartwarming journey
-                            that changes lives, both for the adopted pet and the
-                            adopter
-                            At our pet store, we celebrate the profound impact of adoption, as it brings joy, love, and
-                            compassion into homes. Through adoption, you open your heart and home to a deserving animal,
-                            offering them a second chance at a happy life. Our adoption process is thoughtfully designed
-                            to
-                            ensure the perfect match between pet and owner, fostering lifelong bonds of trust and
-                            companionship. Each adopted pet becomes a treasured family member, enriching lives with
-                            their
-                            unconditional love and loyalty. As advocates of adoption, we take immense pride in playing a
-                            role in uniting pets with their forever homes, creating countless heartwarming stories of
-                            hope
-                            and transformation. Join us on this beautiful journey of rescue and love, and together,
-                            let's
-                            make a difference in the lives of animals, one adoption at a time.
-                        </p>
-                    </div>
-                    <!-- pet award card -->
-                    <div class="col-md-4">
-                        <img src="./images/adoption/pet-adoptioncertificate.png" style="height: 30vh;" width="400vw"
-                            alt="pet adoption certificate">
-                    </div>
-                </div>
+
+            <div>
+                <p> <span class="p1">Adoption</span> is a heartwarming journey
+                    that changes lives, both for the adopted pet and the
+                    adopter
+                    At our pet store, we celebrate the profound impact of adoption, as it brings joy, love, and
+                    compassion into homes. Through adoption, you open your heart and home to a deserving animal,
+                    offering them a second chance at a happy life. Our adoption process is thoughtfully designed
+                    to
+                    ensure the perfect match between pet and owner, fostering lifelong bonds of trust and
+                    companionship. Each adopted pet becomes a treasured family member, enriching lives with
+                    their
+                    unconditional love and loyalty. As advocates of adoption, we take immense pride in playing a
+                    role in uniting pets with their forever homes, creating countless heartwarming stories of
+                    hope
+                    and transformation. Join us on this beautiful journey of rescue and love, and together,
+                    let's
+                    make a difference in the lives of animals, one adoption at a time.
+                </p>
             </div>
-
-
-            <!-- Adoption images starts here -->
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-4 choose-me  text-center">
-                        <img src="./images/adoption/2.jpeg" class="adoption-image" alt="Cats and dogs images">
-                        <blockquote>"Adopt, don't shop: Rescue a pet and change a life forever."</blockquote>
-                        <button class="btn btn-primary text-white adoption-button" type="submit">Submit</button>
-                    </div>
-                    <div class="col-md-4 choose-me">
-                        <img src="./images/adoption/adoptme.webp" class="adoption-image" alt="Adopt me image">
-                    </div>
-                    <div class="col-md-4 choose-me  text-center">
-                        <img src="./images/adoption/pets.jpeg" class="adoption-image" alt="cute cats and dogs">
-                        <blockquote>"Open your heart, adopt a pet, and discover unconditional love."</blockquote>
-                        <button class="btn btn-primary text-white adoption-button" type="submit">Submit</button>
-                    </div>
-                    <div class="col-md-4 choose-me  text-center">
-                        <img src="./images/adoption/puppies.jpeg" class="adoption-image" alt="cute puppies">
-                        <blockquote>"Adoption is love in action - embrace a new furry family member."</blockquote>
-                        <button class="btn btn-primary text-white adoption-button" type="submit">Submit</button>
-                    </div>
-                    <div class="col-md-4 choose-me  text-center">
-                        <img src="./images/adoption/pets2.jpeg" class="adoption-image" alt="cats and dogs images">
-                        <blockquote>"Give a second chance, adopt a pet, and make a forever home."</blockquote>
-                        <button class="btn btn-primary text-white adoption-button" type="submit">Submit</button>
-                    </div>
-                    <div class="col-md-4 choose-me  text-center">
-                        <img src="./images/adoption/kittens.jpeg" class="adoption-image" alt="cute kittens">
-                        <blockquote>"From shelter to home, adoption brings joy, tail wags, and purrs."</blockquote>
-                        <button class="btn btn-primary text-white adoption-button" type="submit">Submit</button>
-                    </div>
-                </div>
+            <!-- pet award card -->
+            <div class="text-center mb-5">
+                <img class="adoption-image" src="./images/adoption/pet-adoptioncertificate.png"
+                    alt="pet adoption certificate">
             </div>
 
             <!-- cards starts here -->
+            <!-- 4 ready to roll cute companions  -->
+            <div>
+                <h1 class="m-4 pt-3">Some of our most adopted companions</h1>
+            </div>
             <div class="container-fluid">
-                <div>
-                    <H4 class="text-center m-4 pt-3">Some of our ready to roll companions</H4>
-                </div>
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3 cards">
                         <div class="card">
                             <img class="card-img-top" src="./images/adoption/cardimages/kitten.jpeg"
-                                alt="Cute kitten for adoption" style="height: 30vh; width: 100%">
-                            <div class="card-body">
-                                <h5 class="card-title">"Find Your Forever Friend: Adopt a Pet!"</h5>
+                                alt="Cute kitten for adoption">
+                            <div class="card-body text-dark">
+                                <h5 class="card-title text-bold">"Find Your Forever Friend: Adopt a Pet!"</h5>
                                 <p class="card-text">"Embrace the joy of adoption and give a shelter pet a second chance
                                     at love.Companions are waiting to be welcomed into loving homes, where
                                     they can fill your days with unconditional love and endless happiness. Each adoption
@@ -150,12 +115,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 cards">
                         <div class="card">
                             <img class="card-img-top" src="./images/adoption/cardimages/puppy.jpeg"
-                                alt="Cute puppy for adoption" style="height: 30vh; width: 100%">
-                            <div class="card-body">
-                                <h5 class="card-title">"Adopt, Love, Repeat: Choose Adoption!"</h5>
+                                alt="Cute puppy for adoption">
+                            <div class="card-body text-dark">
+                                <h5 class="card-title text-bold">"Adopt, Love, Repeat: Choose Adoption!"</h5>
                                 <p class="card-text">"Unlock the power of adoption and witness the extraordinary impact
                                     it has on both your life and the life of a deserving pet. With every adoption, you
                                     become a hero, offering a shelter pet a forever home filled with care and
@@ -166,16 +131,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 cards">
                         <div class="card">
-                            <img class="card-img-top" src="./images/adoption/cardimages/cat.avif" alt="Cat for adoption"
-                                style="height: 30vh; width: 100%">
-                            <div class="card-body">
-                                <h5 class="card-title">"A Home for Every Heart: Adopt Today!"</h5>
-                                <p class="card-text">"Experience the unparalleled joy of adoption as you welcome a
-                                    companion into your life. Shelter pets come ready to wag
-                                    and hearts full of love, seeking a place to call their own.C hoosing adoption,
-                                    you provide comfort,creating memories that last forever. Join the countless families
+                            <img class="card-img-top" src="./images/adoption/cardimages/cat.avif"
+                                alt="Cat for adoption">
+                            <div class="card-body text-dark">
+                                <h5 class="card-title text-bold">"A Home for Every Heart: Adopt Today!"</h5>
+                                <p class="card-text">"Experience the unparalleled joy of adoption as you welcome a cute
+                                    companion into your life. Shelter our pets come ready to wag
+                                    and hearts full of love, seeking a place to call their own Choosing adoption,
+                                    you provide comfort, home, and creating memories that last forever. Join the
+                                    countless families
                                     who have found happiness through adoption, and
                                     make your home a haven of love and laughter."</p>
 
@@ -183,12 +149,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 cards">
                         <div class="card">
-                            <img class="card-img-top" src="./images/adoption/cardimages/dog.jpeg" alt="Dog for adoption"
-                                style="height: 30vh; width: 100%">
-                            <div class="card-body">
-                                <h5 class="card-title">"Adopt a Lifetime of Happiness!"</h5>
+                            <img class="card-img-top" src="./images/adoption/cardimages/dog.jpeg"
+                                alt="Dog for adoption">
+                            <div class="card-body text-dark">
+                                <h5 class="card-title text-bold">"Adopt a Lifetime of Happiness!"</h5>
                                 <p class="card-text">"Adoption is the key to unlocking a world of joy and fulfillment,
                                     where hearts meet and souls connect with our companions. Our rescued pets have
                                     stories of resilience and
@@ -201,8 +167,63 @@
                     </div>
                 </div>
             </div>
+
+
+            <!-- Adoption images starts here -->
+            <!--  some of the images of cats and dogs ready to go home -->
+            <h1 class="text-bold text-dark">Some of our ready to be adopted cute friends</h1>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="./images/adoption/2.jpeg" class="adoption-image1" alt="Cats and dogs images">
+                        <blockquote>"Adopt, don't shop: Rescue a pet and change a life forever."</blockquote>
+                        <div class="text-center">
+                            <button class="btn-center btn btn-primary text-white adoption-button"
+                                type="submit">Submit</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./images/adoption/adoptme.webp" class="adoption-image1 a" alt="Adopt me image">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./images/adoption/pets.jpeg" class="adoption-image1" alt="cute cats and dogs">
+                        <blockquote>"Open your heart, adopt a pet, and discover unconditional love."</blockquote>
+                        <div class="text-center">
+                            <button class="btn-center btn btn-primary text-white adoption-button"
+                                type="submit">Submit</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./images/adoption/puppies.jpeg" class="adoption-image1" alt="cute puppies">
+                        <blockquote>"Adoption is love in action - embrace a new furry family member."</blockquote>
+                        <div class="text-center">
+                            <button class="btn-center btn btn-primary text-white adoption-button"
+                                type="submit">Submit</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./images/adoption/pets2.jpeg" class="adoption-image1" alt="cats and dogs images">
+                        <blockquote>"Give a second chance, adopt a pet, and make a forever home."</blockquote>
+                        <div class="text-center">
+                            <button class="btn-center btn btn-primary text-white adoption-button"
+                                type="submit">Submit</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./images/adoption/kittens.jpeg" class="adoption-image1" alt="cute kittens">
+                        <blockquote>"From shelter to home, adoption brings joy, tail wags, and purrs."</blockquote>
+                        <div class="text-center">
+                            <button class="btn-center btn btn-primary text-white adoption-button"
+                                type="submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- the last adoption paragraph starts here -->
             <div class="adoption-end-paragraph m-4">
-                <p>As the final chapter of adoption unfolds, the true magic begins—a lifetime of cherished memories,
+                <p><span class="p1"></span> As</span> the final chapter of adoption unfolds, the true magic begins—a
+                    lifetime of cherished memories,
                     unwavering loyalty, and boundless affection. Every wagging tail and contented purr reaffirms the
                     profound impact of this selfless act, turning a simple act of kindness into a lifelong bond of love
                     and companionship. In the end, adoption is not just about finding a pet; it's about discovering a
@@ -211,14 +232,13 @@
             </div>
         </div>
     </div>
-
+    <hr>
 
 
     <!-- Footer -->
-    <footer id="footer" class="bg-secondary text-center text-white mt-3">
+    <footer id="footer" class="text-center mt-3">
         <!-- Grid container -->
-        <div class="container p-2">
-
+        <div class="footer-container mt-2 p-3">
             <!-- Section: Links -->
             <section class="">
                 <!--Grid row-->
@@ -258,10 +278,7 @@
             <div class="row">
                 <div class="col-md-4 mb-4 mb-md-0">
                     <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
-                        <img src="./images/cat3.avif" style="width:100px; height:30vh" class="w-100" />
-                        <a href="#!">
-                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
-                        </a>
+                        <img src="./images/footer-image/cat and dog1.webp" style="width:400px; height:24vh;" />
                     </div>
                 </div>
                 <!-- Grid column -->
@@ -306,10 +323,7 @@
                 <!-- image of dog in the footer -->
                 <div class="col-md-4 mb-4 mb-md-0">
                     <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
-                        <img src="./images/dog.jpeg" style="width:100px; height:30vh" class="w-100" />
-                        <a href="#!">
-                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
-                        </a>
+                        <img src="./images/footer-image/cat and dog.jpeg" style="width:400px; height:24vh;" />
                     </div>
                 </div>
             </div>
@@ -333,7 +347,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
         crossorigin="anonymous"></script>
-    <!-- external JS page -->
     <script src="test.js"></script>
 </body>
 

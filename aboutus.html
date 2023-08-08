@@ -14,11 +14,12 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- External CSS page -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 </head>
 
-<body>
-    <nav id="top-navbar" class="navbar bg-secondary navbar-expand-lg navbar-light p-3">
-        <a class="navbar-brand" href="#">Home</a>
+<body onload="checkNumbersOfVisitors()">
+    <nav id="top-navbar" class="navbar navbar-expand-lg navbar-light p-2">
+        <a class="navbar-brand" href="./home.html">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -27,25 +28,25 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#aboutUs">About Us <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#aboutus">About us <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link" href="./services.html">Services</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        View More
+                        Dropdown
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#products">products</a>
-                        <a class="dropdown-item" href="#services">Services</a>
-                        <a class="dropdown-item" href="#adoption">Adoption</a>
+                        <a class="dropdown-item" href="./adoption.html">Adoption</a>
+                        <a class="dropdown-item" href="./products.html">Products</a>
+                        <a class="dropdown-item" href="./contact.html">Contacts</a>
                     </div>
                 </li>
             </ul>
             <div class="logo-name">
-                <h1>Happy Pets Store</h1>
+                <h1 class="text-bold text-white text-uppercase">Happy Pets Store</h1>
             </div>
             <form action="./index.html" class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -55,90 +56,147 @@
     </nav>
     <!-- nav Ends here -->
 
-    <!-- about us starts here -->
-    <div id="aboutUs" style="height: 100vh; width:100vw">
-        <div class="journey">
-            <h2 class="text-center">"Our Pet-tastic Journey: From Paws to Smiles."</h2>
-            <p>At Happy Pet Store, our story is woven with a deep-rooted love for animals. As devoted pet enthusiasts
-                ourselves, we embarked on this journey with the vision of creating a haven for pets and their human
-                companions alike. Our About Us page unveils the heart and soul behind our pet store—a passion-driven
-                team dedicated to providing exceptional care and products for every wagging tail and gentle purr that
-                graces our lives. With years of experience and expertise in the pet industry, we have curated a diverse
-                range of premium pet supplies, from nourishing foods to engaging toys, all carefully chosen to enhance
-                the well-being and happiness of our furry friends. We take immense pride in our commitment to promoting
-                pet adoption, offering a loving home to countless pets in need. As you browse through our store, you'll
-                find the essence of our love for animals, reflected in every aspect of our pet paradise. Welcome to
-                Happy Pet Store, where compassion meets quality, and where pets truly become family.</p>
-            <p>It all started with a shared love for animals, a dream to make a difference in the lives of pets, and the
-                unwavering dedication of our passionate team. As devoted pet enthusiasts, we fondly recall our
-                heartwarming encounters with countless furry friends, each moment kindling the desire to create
-                something extraordinary for pets and their human companions. Through hard work and a deep-rooted
-                commitment to pet welfare, our small pet store blossomed into a vibrant and caring community, where the
-                wagging of tails and the sound of purrs reverberate joyfully. Our journey continues, and every step we
-                take is guided by the happiness and well-being of our beloved four-legged companions. Join us on this
-                remarkable voyage as we strive to make every tail wag and every purr resound with contentment and love.
-            </p>
-        </div>
-        <div class="col-md">
-            <h2>Mission</h2>
-            <p>"At Happy Pet Store, our mission is to provide a loving and nurturing environment for pets and their
-                owners. We are dedicated to offering premium products and personalized services that cater to the unique
-                needs of every furry companion. Through responsible pet care, education, and advocacy, we aim to promote
-                pet adoption, enhance the bond between pets and their human families, and ensure a lifetime of happiness
-                for every pet that graces our store."</p>
-        </div>
-        <div class="col-md">
-            <h2>Vision</h2>
-            <p>"Our vision at Happy Pet Store is to be the leading destination for pet lovers, where compassion,
-                knowledge, and innovation converge to create a haven for pets of all shapes and sizes. We aspire to be a
-                hub for pet parents, a place where they can find expert guidance, top-quality products, and a supportive
-                community that shares their passion for animals. By fostering an environment of trust and excellence, we
-                envision enriching the lives of pets and their owners, inspiring a world where every pet is loved,
-                cherished, and well-cared for."</p>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="employee-1 col-md-3">
-                    <p><span class="text-bold">Sarah - Pet Adoption Specialist:</span> <br>
-                        Sarah's heart beats for rescuing animals in need. As our Pet Adoption Specialist, she tirelessly
-                        works to match furry companions with their forever homes. With a keen eye for understanding the
-                        personalities and needs of pets, Sarah ensures each adoption is a perfect match, making tails
-                        wag and hearts full.</p>
+
+    <!-- main body starts here -->
+    <div class="main-body">
+
+        <!-- about us starts here -->
+        <div id="aboutUs">
+            <div class="journey">
+                <h1 class=" text-bold text-center text-uppercase mt-5">"Pet-tastic Journey: From Paws to Smiles."</h1>
+                <p><span class="p1">At </span>Happy Pet Store, our story is woven with a deep-rooted love for animals.
+                    As devoted pet
+                    enthusiasts
+                    ourselves, we embarked on this journey with the vision of creating a haven for pets and their human
+                    companions alike. Our About Us page unveils the heart and soul behind our pet store—a passion-driven
+                    team dedicated to providing exceptional care and products for every wagging tail and gentle purr
+                    that
+                    graces our lives. With years of experience and expertise in the pet industry, we have curated a
+                    diverse
+                    range of premium pet supplies, from nourishing foods to engaging toys, all carefully chosen to
+                    enhance
+                    the well-being and happiness of our furry friends. We take immense pride in our commitment to
+                    promoting
+                    pet adoption, offering a loving home to countless pets in need. As you browse through our store,
+                    you'll
+                    find the essence of our love for animals, reflected in every aspect of our pet paradise. Welcome to
+                    Happy Pet Store, where compassion meets quality, and where pets truly become family.</p>
+                <p><span class="p1"> It</span> all started with a shared love for animals, a dream to make a difference
+                    in the lives of pets, and
+                    the
+                    unwavering dedication of our passionate team. As devoted pet enthusiasts, we fondly recall our
+                    heartwarming encounters with countless furry friends, each moment kindling the desire to create
+                    something extraordinary for pets and their human companions. Through hard work and a deep-rooted
+                    commitment to pet welfare, our small pet store blossomed into a vibrant and caring community, where
+                    the
+                    wagging of tails and the sound of purrs reverberate joyfully. Our journey continues, and every step
+                    we
+                    take is guided by the happiness and well-being of our beloved four-legged companions. Join us on
+                    this
+                    remarkable voyage as we strive to make every tail wag and every purr resound with contentment and
+                    love.
+                </p>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="mv col-md">
+                        <h3>Mission</h3>
+                        <p> <span class="p1"> "At </span>Happy Pet Store, our mission is to provide a loving and
+                            nurturing environment for pets
+                            and their
+                            owners. We are dedicated to offering premium products and personalized services that cater
+                            to the
+                            unique
+                            needs of every furry companion. Through responsible pet care, education, and advocacy, we
+                            aim to
+                            promote
+                            pet adoption, enhance the bond between pets and their human families, and ensure a lifetime
+                            of
+                            happiness
+                            for every pet that graces our store."</p>
+                    </div>
+                    <div class="mv col-md">
+                        <h3>Vision</h3>
+                        <p> <span class="p1"> "Our </span>vision at Happy Pet Store is to be the leading destination for
+                            pet lovers, where
+                            compassion,
+                            knowledge, and innovation converge to create a haven for pets of all shapes and sizes. We
+                            aspire to
+                            be a
+                            hub for pet parents, a place where they can find expert guidance, top-quality products, and
+                            a
+                            supportive
+                            community that shares their passion for animals. By fostering an environment of trust and
+                            excellence, we
+                            envision enriching the lives of pets and their owners, inspiring a world where every pet is
+                            loved,
+                            cherished, and well-cared for."</p>
+                    </div>
                 </div>
-                <div class="employee-2 col-md-3">
-                    <p> <span class="text-bold"> John - Pet Nutrition Guru:</span> <br>
-                        John's vast knowledge and expertise in pet nutrition make him the go-to guy for all things
-                        food-related. As our Pet Nutrition Guru, he helps pet parents select the healthiest and most
-                        nutritious diets for their furry friends. From puppies to senior cats, John ensures every pet's
-                        diet supports their vitality and longevity.</p>
-                </div>
-                <div class="employee-3 col-md-3">
-                    <p><span class="text-bold">Emma - Pet Styling Artist:</span> <br>
-                        With a keen eye for style and flair, Emma is our Pet Styling Artist. She takes pet grooming to a
-                        whole new level, transforming our furry clients into picture-perfect models. From chic haircuts
-                        to pampering spa sessions, Emma ensures every pet leaves our store feeling and looking their
-                        absolute best.</p>
-                </div>
-                <div class="employee-4 col-md-3">
-                    <p><span class="text-bold">Michael - Pet Product Wizard:</span> <br>
-                        Michael is our resident Pet Product Wizard, responsible for curating a diverse range of
-                        top-quality pet products. With his keen understanding of the latest trends and innovations in
-                        the pet industry, he ensures our shelves are stocked with only the best toys, treats, and
-                        accessories to keep pets engaged, happy, and healthy.</p>
+            </div>
+
+            <div class=" text-center">
+                <h3 class="text-uppercase pet-takers">Our pet Takers </h3>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="employee col-md">
+                        <p><span class="text-bold text-dark names">Sarah - Pet Adoption Specialist:</span> <br>
+                            <span class="p1"> Sarah's</span> heart beats for rescuing animals in need. As our Pet
+                            Adoption Specialist, she
+                            tirelessly
+                            works to match furry companions with their forever homes. With a keen eye for understanding
+                            the
+                            personalities and needs of pets, Sarah ensures each adoption is a perfect match, making
+                            tails
+                            wag and hearts full.
+                        </p>
+                        <img class="pet-taker-images" src="./images/Aboutus:employees/Sarah.jpeg" alt="Sarah">
+                    </div>
+                    <div class="employee col-md">
+                        <p> <span class="text-bold text-dark names"> John - Pet Nutrition Guru:</span> <br>
+                            <span class="p1"> John's </span>vast knowledge and expertise in pet nutrition make him the
+                            go-to guy for all things
+                            food-related. As our Pet Nutrition Guru, he helps pet parents select the healthiest and most
+                            nutritious diets for their furry friends. From puppies to senior cats, John ensures every
+                            pet's
+                            diet supports their vitality and longevity.
+                        </p>
+                        <img class="pet-taker-images" src="./images/Aboutus:employees/John.jpeg" alt="John">
+                    </div>
+                    <div class="employee col-md">
+                        <p><span class="text-bold text-dark names">Emma - Pet Styling Artist:</span> <br>
+                            <span class="p1"> With</span> a keen eye for style and flair, Emma is our Pet Styling
+                            Artist. She takes pet grooming
+                            to a
+                            whole new level, transforming our furry clients into picture-perfect models. From chic
+                            haircuts
+                            to pampering spa sessions, Emma ensures every pet leaves our store feeling and looking their
+                            absolute best.
+                        </p>
+                        <img class="pet-taker-images" src="./images/Aboutus:employees/emma.jpeg" alt="Emma">
+                    </div>
+                    <div class="employee col-md">
+                        <p><span class="text-bold text-dark names">Michael - Pet Product Wizard:</span> <br>
+                            <span class="p1"> Michael</span> is our resident Pet Product Wizard, responsible for
+                            curating a diverse range of
+                            top-quality pet products. With his keen understanding of the latest trends and innovations
+                            in
+                            the pet industry, he ensures our shelves are stocked with only the best toys, treats, and
+                            accessories to keep pets engaged, happy, and healthy.
+                        </p>
+                        <img class="pet-taker-images" src="./images/Aboutus:employees/michael.jpeg" alt="Michael">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
+    <hr>
 
     <!-- Footer -->
-    <footer id="footer" class="bg-secondary text-center text-white mt-3">
+    <footer id="footer" class="text-center mt-3">
         <!-- Grid container -->
-        <div class="container p-2">
-
+        <div class="footer-container mt-2 p-3">
             <!-- Section: Links -->
             <section class="">
                 <!--Grid row-->
@@ -178,10 +236,7 @@
             <div class="row">
                 <div class="col-md-4 mb-4 mb-md-0">
                     <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
-                        <img src="./images/cat3.avif" style="width:100px; height:30vh" class="w-100" />
-                        <a href="#!">
-                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
-                        </a>
+                        <img src="./images/footer-image/cat and dog1.webp" style="width:400px; height:24vh;" />
                     </div>
                 </div>
                 <!-- Grid column -->
@@ -226,10 +281,7 @@
                 <!-- image of dog in the footer -->
                 <div class="col-md-4 mb-4 mb-md-0">
                     <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
-                        <img src="./images/dog.jpeg" style="width:100px; height:30vh" class="w-100" />
-                        <a href="#!">
-                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
-                        </a>
+                        <img src="./images/footer-image/cat and dog.jpeg" style="width:400px; height:24vh;" />
                     </div>
                 </div>
             </div>
@@ -253,7 +305,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
         crossorigin="anonymous"></script>
-    <!-- external JS page -->
     <script src="test.js"></script>
 </body>
 

@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 </head>
 
-<body>
-    <nav id="top-navbar" class="navbar navbar-expand-lg navbar-light p-2">
+<body onload="checkNumbersOfVisitors()">
+    <nav id="top-navbar" class="navbar navbar-expand-lg navbar-light p-2 navbar-toggler">
         <a class="navbar-brand" href="#">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -120,20 +120,20 @@
             <br>
             <!-- Cute images of some cats and dogs -->
             <div class="text-center ">
-                <h4 class="text-uppercase text-center h4">Here are some of our cute companions</h4>
+                <h4 class="text-uppercase text-center h4">Here are some of our FEATURED cute companions</h4>
             </div>
             <div class="row">
                 <div class="col-md">
-                    <img src="./images/homeimage1.avif" alt="" style="height: 40vh; width:100%">
+                    <img src="./images/homeimage/homeimage1.avif" alt="" style="height: 40vh; width:100%">
                 </div>
                 <div class="col-md">
-                    <img src="./images/homeimage2.avif" alt="" style="height: 40vh; width:100%">
+                    <img src="./images/homeimage/homeimage2.avif" alt="" style="height: 40vh; width:100%">
                 </div>
                 <div class="col-md">
-                    <img src="./images/homeimage3.avif" alt="" style="height: 40vh; width:100%">
+                    <img src="./images/homeimage/homeimage3.avif" alt="" style="height: 40vh; width:100%">
                 </div>
                 <div class="col-md">
-                    <img src="./images/homeimage4.avif" alt="" style="height: 40vh; width:100%">
+                    <img src="./images/homeimage/homeimage4.avif" alt="" style="height: 40vh; width:100%">
                 </div>
             </div>
         </div>
@@ -953,13 +953,12 @@
             </div>
         </div>
     </div>
-
-
+    <hr>
 
     <!-- Footer -->
     <footer id="footer" class="text-center mt-3">
         <!-- Grid container -->
-        <div class="footer-container p-0">
+        <div class="footer-container mt-2 p-3">
             <!-- Section: Links -->
             <section class="">
                 <!--Grid row-->
@@ -999,7 +998,7 @@
             <div class="row">
                 <div class="col-md-4 mb-4 mb-md-0">
                     <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
-                        <img src="./images/cat3.avif" style="width:200px; height:24vh;" />
+                        <img src="./images/footer-image/cat and dog1.webp" style="width:400px; height:24vh;" />
                     </div>
                 </div>
                 <!-- Grid column -->
@@ -1044,7 +1043,7 @@
                 <!-- image of dog in the footer -->
                 <div class="col-md-4 mb-4 mb-md-0">
                     <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
-                        <img src="./images/dog.jpeg" style="width:200px; height:24vh;" />
+                        <img src="./images/footer-image/cat and dog.jpeg" style="width:400px; height:24vh;" />
                     </div>
                 </div>
             </div>

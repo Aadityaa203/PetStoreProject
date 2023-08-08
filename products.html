@@ -14,11 +14,12 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- External CSS page -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 </head>
 
-<body>
-    <nav id="top-navbar" class="navbar bg-secondary navbar-expand-lg navbar-light p-3">
-        <a class="navbar-brand" href="#">Home</a>
+<body onload="checkNumbersOfVisitors()">
+    <nav id="top-navbar" class="navbar navbar-expand-lg navbar-light p-2">
+        <a class="navbar-brand" href="./home.html">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -27,25 +28,25 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#aboutUs">About Us <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="./aboutus.html">About us <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link" href="./services.html">Services</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        View More
+                        Dropdown
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#products">products</a>
-                        <a class="dropdown-item" href="#services">Services</a>
-                        <a class="dropdown-item" href="#adoption">Adoption</a>
+                        <a class="dropdown-item" href="./adoption.html">Adoption</a>
+                        <a class="dropdown-item" href="#products">Products</a>
+                        <a class="dropdown-item" href="./contact.html">Contacts</a>
                     </div>
                 </li>
             </ul>
             <div class="logo-name">
-                <h1>Happy Pets Store</h1>
+                <h1 class="text-bold text-white text-uppercase">Happy Pets Store</h1>
             </div>
             <form action="./index.html" class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -60,31 +61,36 @@
     <div class="main-body">
 
         <!-- Product page starts here -->
-        <div id="products" style="width:100vw" style="height: 20vh;">
-            <div class="container-fluid text-center m-1 p-1 mb-3 mt-5">
-                <div class="product-paragraph">
-                    <p>Welcome to our pet store, where we provide a delightful array of products for your beloved cats
-                        and dogs. Discover cozy and stylish cat and dog houses, offering the perfect retreat for rest
-                        and play. Indulge your pets' taste buds with our premium cat and dog food, crafted to ensure
-                        optimal nutrition and well-being. And for walks and adventures, our durable and well-fitted
-                        harnesses guarantee safety and control. With our thoughtfully curated selection, we strive to
-                        strengthen the bond between you and your furry friends, making every moment a joyous one.</p>
-                </div>
-                <!-- Product Details Section -->
+        <div id="products">
+            <h1 class="text-bold text-center text-uppercase mt-5">Product page</h1>
+            <div class="product-paragraph">
+                <p><span class="p1">Welcome </span>to our pet store, where we provide a delightful array of products
+                    for your beloved cats
+                    and dogs. Discover cozy and stylish cat and dog houses, offering the perfect retreat for rest
+                    and play. Indulge your pets' taste buds with our premium cat and dog food, crafted to ensure
+                    optimal nutrition and well-being. And for walks and adventures, our durable and well-fitted
+                    harnesses guarantee safety and control. With our thoughtfully curated selection, we strive to
+                    strengthen the bond between you and your furry friends, making every moment a joyous one.</p>
+            </div>
+            <!-- Product Details Section -->
+            <div class="container-fluid m-1 mt-4">
                 <div class="row">
-                    <div class="col-md-4 m-1">
+                    <div class="col-md-4">
                         <!-- Add product image here -->
-                        <img src="./images/product page/cathouse.png" alt="Product Image" class="img-fluid">
-                    </div>
-                    <div class="col-md-4 m-1">
+                        <img class="product-img" src="./images/product page/cathouse.png" alt="Product Image">
+
                         <!-- Add product details here -->
-                        <h4>Cat House</h4>
-                        <p>"Give your feline friend the ultimate hideaway with our cat house toy – a cozy retreat where
+                        <h3>Cat House</h3>
+                        <p>"Give your feline friend the ultimate hideaway with our cat house toy – a cozy retreat
+                            where
                             they can play, rest, and satisfy their natural curiosity. Featuring a durable design and
                             multiple interactive elements, this cat house provides endless entertainment for your
-                            whiskered companion."</p>
-                        <p><strong>Price: $80.00</strong></p>
-                        <!-- Add product variations or size options if applicable -->
+                            whiskered companion."
+                        </p>
+                        <p>
+                            <strong>Price: $80.00</strong>
+                        </p>
+                        <!-- Add product variations or size options -->
                         <div class="form-group">
                             <label for="productVariation">Select Size:</label>
                             <select class="form-control" id="productVariation">
@@ -93,38 +99,35 @@
                                 <option value="large">Large</option>
                             </select>
                         </div>
-                        <!-- Add 'Add to Cart' button or 'Buy Now' button -->
-                        <button type="button" class="btn btn-primary">Add to Cart</button>
-                    </div>
-
-                    <!-- Product Reviews Section -->
-                    <div class="col-md-3 mt-4 m-1">
-                        <div class="col-md-12">
-                            <!-- Add customer reviews and ratings here -->
-                            <h3>Customer Reviews</h3>
-                            <div class="media">
-                                <img src="./images/product page/customer-reviews-2.png" class="mr-3"
-                                    alt="Customer Avatar" style="width: 200px; height: 84px;">
+                        <!-- Add 'Add to Cart' button  -->
+                        <div class="text-center">
+                            <button type="button" class="btn btn-primary">Add to Cart</button>
+                        </div>
+                        <!-- Add customer reviews and ratings here -->
+                        <h3 class="text-center">Customer Reviews</h3>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <h5 class="m-1">Aaditya Acharya</h5>
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <p> Best product in market. Have Cats? you need this</p>
                             </div>
-                            <div class="media-body">
-                                <h5 class="mt-0">Aaditya Acharya</h5>
-                                <p> <small> Best product in market. <br>Have Cats? you need this</small></p>
-                            </div>
-
-                            <!-- Add more reviews if available -->
                         </div>
                     </div>
-                </div>
-                <!-- Dog house starts -->
-                <div class="row m-2">
-                    <div class="col-md-4 m-1">
+
+                    <!-- Dog house starts -->
+                    <div class="col-md-4">
                         <!-- Add product image here -->
-                        <img src="./images/product page/doghouse.jpeg" alt="Product Image" class="img-fluid">
-                    </div>
-                    <div class="col-md-4 m-1">
+                        <img src="./images/product page/doghouse.jpeg" alt="Product Image" class="product-img">
                         <!-- Add product details here -->
-                        <h4>Dog House</h4>
-                        <p>"Give your feline friend the ultimate hideaway with our dog house toy – a cozy retreat where
+                        <h3>Dog House</h3>
+                        <p>"Give your feline friend the ultimate hideaway with our dog house toy – a cozy retreat
+                            where
                             they can play, rest, and satisfy their natural curiosity. Featuring a durable design and
                             multiple interactive elements, this cat house provides endless entertainment for your
                             whiskered companion."</p>
@@ -138,42 +141,41 @@
                                 <option value="large">Large</option>
                             </select>
                         </div>
-                        <!-- Add 'Add to Cart' button or 'Buy Now' button -->
-                        <button type="button" class="btn btn-primary">Add to Cart</button>
-                    </div>
-
-                    <!-- Product Reviews Section -->
-                    <div class="col-md-3 mt-4 m-1">
-                        <div class="col-md-12">
-                            <!-- Add customer reviews and ratings here -->
-                            <h3>Customer Reviews</h3>
-                            <div class="media">
-                                <img src="./images/product page/customer-reviews-2.png" class="mr-3"
-                                    alt="Customer Avatar" style="width: 200px; height: 84px;">
+                        <!-- Product Reviews Section -->
+                        <div class="text-center">
+                            <button type="button" class="btn btn-primary">Add to Cart</button>
+                        </div>
+                        <!-- Add customer reviews and ratings here -->
+                        <h3 class="text-center">Customer Reviews</h3>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <h5 class="m-1">Chandra Timsina</h5>
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p> Absolutely loved the dog house. It have sufficient room and looks
+                                    beautiful Have Dogs? you need this</p>
                             </div>
-                            <div class="media-body">
-                                <h5 class="mt-0">Chandra Timsina</h5>
-                                <p> <small> Absolutely loved the dog house. It have sufficient room and looks
-                                        beautiful<br>Have Dogs? you need this</small></p>
-                            </div>
-
-                            <!-- Add more reviews if available -->
                         </div>
                     </div>
-                </div>
-                <!-- the food section starts here -->
-                <!-- Cat food -->
-                <div class="row m-2">
-                    <div class="col-md-4 m-1">
+
+
+                    <!-- the food section starts here -->
+                    <!-- Cat food -->
+                    <div class="col-md-4">
                         <!-- Add product image here -->
-                        <img src="./images/product page/catFood.webp" alt="Product Image" class="img-fluid">
-                    </div>
-                    <div class="col-md-4 m-1">
+                        <img src="./images/product page/catFood.webp" alt="Product Image" class="product-img">
                         <!-- Add product details here -->
-                        <h4>Cat Food</h4>
-                        <p>"Satisfy your cat's cravings with our premium cat food. Nutritious, delicious, and specially
-                            crafted for their well-being, our cat food brings joy to every mealtime, ensuring a happy
-                            and healthy feline companion."</p>
+                        <h3>Cat Food</h3>
+                        <p>"Satisfy your cat's cravings with our premium cat food. Nutritious, delicious, and
+                            specially
+                            crafted for their well-being, our cat food brings joy to every mealtime, ensuring a
+                            happy
+                            and healthy feline companion. This is also the best premium product in the market yet."</p>
                         <p><strong>Price: $30.00</strong></p>
                         <!-- Add product variations or size options if applicable -->
                         <div class="form-group">
@@ -185,38 +187,40 @@
                             </select>
                         </div>
                         <!-- Add 'Add to Cart' button or 'Buy Now' button -->
-                        <button type="button" class="btn btn-primary">Add to Cart</button>
-                    </div>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-primary">Add to Cart</button>
+                        </div>
 
-                    <!-- Product Reviews Section -->
-                    <div class="col-md-3 mt-4 m-1">
-                        <div class="col-md-12">
-                            <!-- Add customer reviews and ratings here -->
-                            <h3>Customer Reviews</h3>
-                            <div class="media">
-                                <img src="./images/product page/customer-reviews-2.png" class="mr-3"
-                                    alt="Customer Avatar" style="width: 200px; height: 84px;">
+                        <!-- Add customer reviews and ratings here -->
+                        <h3 class="text-center">Customer Reviews</h3>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <h5 class="m-1">Chandra Timsina</h5>
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <p>"Delicious and nutritious; my dog loves it!" highly recommended</p>
                             </div>
-                            <div class="media-body">
-                                <h5 class="mt-0">Prisha America</h5>
-                                <p> <small> "Delicious and nutritious; my dog loves it!" highly recommended</small></p>
-                            </div>
-                            <!-- Add more reviews if available -->
                         </div>
                     </div>
-                </div>
-                <!-- Dog food -->
-                <div class="row m-2">
-                    <div class="col-md-4 m-1">
+
+                    <!-- Dog food -->
+                    <div class="col-md-4">
+
                         <!-- Add product image here -->
-                        <img src="./images/product page/Dog food.webp" alt="Product Image" class="img-fluid">
-                    </div>
-                    <div class="col-md-4 m-1">
+                        <img src="./images/product page/Dog food.webp" alt="Product Image" class="product-img">
+
                         <!-- Add product details here -->
-                        <h4>Dog Food</h4>
-                        <p>"Nourish your canine companion with our premium dog food. Packed with essential nutrients and
+                        <h3>Dog Food</h3>
+                        <p>"Nourish your canine companion with our premium dog food. Packed with essential nutrients
+                            and
                             mouthwatering flavors, our recipes cater to dogs of all ages and sizes, ensuring a
-                            tail-wagging dining experience every time."</p>
+                            tail-wagging dining experience every time."
+                        </p>
                         <p><strong>Price: $40.00</strong></p>
                         <!-- Add product variations or size options if applicable -->
                         <div class="form-group">
@@ -228,40 +232,41 @@
                             </select>
                         </div>
                         <!-- Add 'Add to Cart' button or 'Buy Now' button -->
-                        <button type="button" class="btn btn-primary">Add to Cart</button>
-                    </div>
-
-                    <!-- Product Reviews Section -->
-                    <div class="col-md-3 mt-4 m-1">
-                        <div class="col-md-12">
-                            <!-- Add customer reviews and ratings here -->
-                            <h3>Customer Reviews</h3>
-                            <div class="media">
-                                <img src="./images/product page/customer-reviews-2.png" class="mr-3"
-                                    alt="Customer Avatar" style="width: 200px; height: 84px;">
-                            </div>
-                            <div class="media-body">
-                                <h5 class="mt-0">Prishal handsome</h5>
-                                <p> <small> "Nourish your canine companion with our premium dog food. Packed with
-                                        essential nutrients and mouthwatering flavors, our recipes cater to dogs of all
-                                        ages and sizes, ensuring a tail-wagging dining experience every time."</small>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-primary">Add to Cart</button>
+                        </div>
+                        <!-- Add customer reviews and ratings here -->
+                        <h3 class="text-center">Customer Reviews</h3>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <h5 class="m-1">Prishal Handsome</h5>
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p> "Nourish your canine companion with our premium dog food. Packed with
+                                    essential nutrients and mouthwatering flavors, our recipes cater to dogs of
+                                    all
+                                    ages and sizes, ensuring a tail-wagging dining experience every
+                                    time."
                                 </p>
                             </div>
-                            <!-- Add more reviews if available -->
                         </div>
                     </div>
-                </div>
-                <!-- cat collar+ harness -->
-                <div class="row m-2">
-                    <div class="col-md-4 m-1">
+
+                    <!-- cat collar+ harness -->
+                    <div class="col-md-4">
                         <!-- Add product image here -->
-                        <img src="./images/product page/catcollor.webp" alt="Product Image" class="img-fluid">
-                    </div>
-                    <div class="col-md-4 m-1">
+                        <img src="./images/product page/catcollor.webp" alt="Product Image" class="product-img">
+
                         <!-- Add product details here -->
-                        <h4>Cat Collar and harness</h4>
-                        <p>"Adjustable cat Harness Vest Breathable Comfortable Pet Mesh Chest Strap cat Walking Leash
-                            For Small Medium cat and large cats"</p>
+                        <h3>Cat Collar and harness</h3>
+                        <p>"Adjustable cat Harness Vest Breathable Comfortable Pet Mesh Chest Strap cat
+                            Walking Leash For Small Medium cat and large cats" Comfortable Pet Mesh Chest Strap cat
+                            Walking Leash For Small Medium cat and large cats"</p>
                         <p><strong>Price: $25.00</strong></p>
                         <!-- Add product variations or size options if applicable -->
                         <div class="form-group">
@@ -273,41 +278,43 @@
                             </select>
                         </div>
                         <!-- Add 'Add to Cart' button or 'Buy Now' button -->
-                        <button type="button" class="btn btn-primary">Add to Cart</button>
-                    </div>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-primary">Add to Cart</button>
+                        </div>
 
-                    <!-- Product Reviews Section -->
-                    <div class="col-md-3 mt-4 m-1">
-                        <div class="col-md-12">
-                            <!-- Add customer reviews and ratings here -->
-                            <h3>Customer Reviews</h3>
-                            <div class="media">
-                                <img src="./images/product page/customer-reviews-2.png" class="mr-3"
-                                    alt="Customer Avatar" style="width: 200px; height: 84px;">
-                            </div>
-                            <div class="media-body">
+                        <!-- Product Reviews Section -->
+
+                        <!-- Add customer reviews and ratings here -->
+                        <h3>Customer Reviews</h3>
+                        <div class="container-fluid">
+                            <div class="row">
                                 <h5 class="mt-0">Bhola Mann</h5>
-                                <p> <small> "Excellent quality and value price for this harness vest. is soft
-                                        .Definitely, I will buy it again on different colors"</small>
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <p> "Excellent quality and value price for this harness vest. is
+                                    soft .Definitely, I will buy it again on different colors. Definitely, I will buy it
+                                    again on different sizes."
                                 </p>
                             </div>
-                            <!-- Add more reviews if available -->
                         </div>
                     </div>
-                </div>
-                <!-- Dog Collar and harness -->
-
-                <div class="row m-2">
-                    <div class="col-md-4 m-1">
+                    <!-- Dog Collar and harness -->
+                    <div class="col-md-4">
                         <!-- Add product image here -->
                         <img src="./images/product page/dog collar and harness.webp" alt="Product Image"
-                            class="img-fluid">
-                    </div>
-                    <div class="col-md-4 m-1">
+                            class="product-img">
                         <!-- Add product details here -->
-                        <h4>Dog Collar and harness</h4>
+                        <h3>Dog Collar and harness</h3>
                         <p>"No Pull Dog Harness & Leash Set: Reflective Oxford Fabric, Easy Control, Perfect for Pet
-                            Walking!"</p>
+                            Walking!"
+                            Oxford Fabric, Easy Control, Perfect for Pet Walking!""No Pull Dog Harness & Leash Set:buy
+                            it when it lasts.
+                        </p>
                         <p><strong>Price: $45.00</strong></p>
                         <!-- Add product variations or size options if applicable -->
                         <div class="form-group">
@@ -319,162 +326,170 @@
                             </select>
                         </div>
                         <!-- Add 'Add to Cart' button or 'Buy Now' button -->
-                        <button type="button" class="btn btn-primary">Add to Cart</button>
-                    </div>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-primary">Add to Cart</button>
+                        </div>
 
-                    <!-- Product Reviews Section -->
-                    <div class="col-md-3 mt-4 m-1">
-                        <div class="col-md-12">
-                            <!-- Add customer reviews and ratings here -->
-                            <h3>Customer Reviews</h3>
-                            <div class="media">
-                                <img src="./images/product page/customer-reviews-2.png" class="mr-3"
-                                    alt="Customer Avatar" style="width: 200px; height: 84px;">
-                            </div>
-                            <div class="media-body">
-                                <h5 class="mt-0">Purnaa Mann</h5>
-                                <p> <small> "I love the handle on the leash! it's soft and padded so it won't hurt my
-                                        wrist if she pulls a bit. the harness is just a tad tighter then I was hoping it
-                                        world be, but it fits her."</small>
+                        <!-- Product Reviews Section -->
+
+                        <!-- Add customer reviews and ratings here -->
+                        <h3>Customer Reviews</h3>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <h5 class="mt-1">Purnaa Mann</h5>
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <p>"I love the handle on the leash! it's soft and padded so it won't hurt
+                                    my wrist if she pulls a bit. the harness is just a tad tighter then I
+                                    was hoping it world be, but it fits her."
                                 </p>
                             </div>
-                            <!-- Add more reviews if available -->
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="jsProducts" class="jsImages">
+
+                    </div>
+                    <hr>
+
+                    <div class="product-bottom-paragraph mt-3">
+                        <p>Our passion for pets drives us to offer only the best products, ensuring your furry
+                            companions
+                            receive the love and care they deserve. At Happy Pet Store, we take pride in being a part of
+                            your pet's journey, from providing a cozy home to nourishing their bodies and supporting
+                            their
+                            adventures. With a commitment to excellence and the well-being of all pets, we welcome you
+                            to
+                            explore our pet-loving haven, where tails wag and purrs resound. Join our community of
+                            devoted
+                            pet parents, and together, let's create a world where pets thrive and cherished memories are
+                            made. Shop with us and experience the joy of being part of our pet-loving family!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+
+        <!-- Footer -->
+        <footer id="footer" class="text-center mt-3">
+            <!-- Grid container -->
+            <div class="footer-container mt-2 p-3">
+                <!-- Section: Links -->
+                <section class="">
+                    <!--Grid row-->
+                    <div class="row">
+                        <!--Grid column-->
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">
+                                <a href="#aboutUs" class="text-white">About Us</a>
+                            </h5>
+                        </div>
+                        <!--Grid column-->
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">
+                                <a href="#services" class="text-white">Services</a>
+                            </h5>
+                        </div>
+                        <!--Grid column-->
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">
+                                <a href="#products" class="text-white">Products</a>
+                            </h5>
+                        </div>
+                        <!--Grid column-->
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">
+                                <a href="#adoption" class="text-white">Adoption</a>
+                            </h5>
+                        </div>
+                    </div>
+                    <!--Grid row-->
+                </section>
+                <!-- Section: Links -->
+            </div>
+            <!-- Grid container -->
+            <!-- image of cat in footer -->
+            <div class="container1">
+                <div class="row">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                            <img src="./images/footer-image/cat and dog1.webp" style="width:400px; height:24vh;" />
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+                    <div class="col-md-4 mx-auto mb-md-0 mb-2 mt-1">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact US</h6>
+                        <p><i class="fas fa-home me-3"></i> Cincinnati, OH</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            info@gmail.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> +1234567890</p>
+                        <p><i class="fas fa-print me-3"></i> +1234567890</p>
+                        <section class="m2-4">
+                            <!-- Facebook -->
+                            <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/"
+                                role="button"><i class="fab fa-facebook-f"></i></a>
+
+                            <!-- Twitter -->
+                            <a class="btn btn-outline-light btn-floating m-1" href="https://www.twitter.com"
+                                role="button"><i class="fab fa-twitter"></i></a>
+
+                            <!-- Google -->
+                            <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com"
+                                role="button"><i class="fab fa-google"></i></a>
+
+                            <!-- Instagram -->
+                            <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com"
+                                role="button"><i class="fab fa-instagram"></i></a>
+
+                            <!-- Linkedin -->
+                            <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkdin.com"
+                                role="button"><i class="fab fa-linkedin-in"></i></a>
+
+                            <!-- Github -->
+                            <a class="btn btn-outline-light btn-floating m-1" href="https://www.github.com"
+                                role="button"><i class="fab fa-github"></i></a>
+                        </section>
+                        <!-- Section: Social media -->
+                    </div>
+                    <!-- Grid column -->
+                    <!-- image of dog in the footer -->
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                            <img src="./images/footer-image/cat and dog.jpeg" style="width:400px; height:24vh;" />
                         </div>
                     </div>
                 </div>
-                <div class="product-bottom-paragraph">
-                    <p>Our passion for pets drives us to offer only the best products, ensuring your furry companions
-                        receive the love and care they deserve. At Happy Pet Store, we take pride in being a part of
-                        your pet's journey, from providing a cozy home to nourishing their bodies and supporting their
-                        adventures. With a commitment to excellence and the well-being of all pets, we welcome you to
-                        explore our pet-loving haven, where tails wag and purrs resound. Join our community of devoted
-                        pet parents, and together, let's create a world where pets thrive and cherished memories are
-                        made. Shop with us and experience the joy of being part of our pet-loving family!</p>
-                </div>
             </div>
-        </div>
-    </div>
-    <!-- Footer -->
-    <footer id="footer" class="bg-secondary text-center text-white mt-3">
-        <!-- Grid container -->
-        <div class="container p-2">
-
-            <!-- Section: Links -->
-            <section class="">
-                <!--Grid row-->
-                <div class="row">
-                    <!--Grid column-->
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">
-                            <a href="#aboutUs" class="text-white">About Us</a>
-                        </h5>
-                    </div>
-                    <!--Grid column-->
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">
-                            <a href="#services" class="text-white">Services</a>
-                        </h5>
-                    </div>
-                    <!--Grid column-->
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">
-                            <a href="#products" class="text-white">Products</a>
-                        </h5>
-                    </div>
-                    <!--Grid column-->
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">
-                            <a href="#adoption" class="text-white">Adoption</a>
-                        </h5>
-                    </div>
-                </div>
-                <!--Grid row-->
-            </section>
-            <!-- Section: Links -->
-        </div>
-        <!-- Grid container -->
-        <!-- image of cat in footer -->
-        <div class="container1">
-            <div class="row">
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
-                        <img src="./images/cat3.avif" style="width:100px; height:30vh" class="w-100" />
-                        <a href="#!">
-                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
-                        </a>
-                    </div>
-                </div>
-                <!-- Grid column -->
-                <div class="col-md-4 mx-auto mb-md-0 mb-2 mt-1">
-                    <!-- Links -->
-                    <h6 class="text-uppercase fw-bold mb-4">Contact US</h6>
-                    <p><i class="fas fa-home me-3"></i> Cincinnati, OH</p>
-                    <p>
-                        <i class="fas fa-envelope me-3"></i>
-                        info@gmail.com
-                    </p>
-                    <p><i class="fas fa-phone me-3"></i> +1234567890</p>
-                    <p><i class="fas fa-print me-3"></i> +1234567890</p>
-                    <section class="m2-4">
-                        <!-- Facebook -->
-                        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/"
-                            role="button"><i class="fab fa-facebook-f"></i></a>
-
-                        <!-- Twitter -->
-                        <a class="btn btn-outline-light btn-floating m-1" href="https://www.twitter.com"
-                            role="button"><i class="fab fa-twitter"></i></a>
-
-                        <!-- Google -->
-                        <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com" role="button"><i
-                                class="fab fa-google"></i></a>
-
-                        <!-- Instagram -->
-                        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com"
-                            role="button"><i class="fab fa-instagram"></i></a>
-
-                        <!-- Linkedin -->
-                        <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkdin.com"
-                            role="button"><i class="fab fa-linkedin-in"></i></a>
-
-                        <!-- Github -->
-                        <a class="btn btn-outline-light btn-floating m-1" href="https://www.github.com" role="button"><i
-                                class="fab fa-github"></i></a>
-                    </section>
-                    <!-- Section: Social media -->
-                </div>
-                <!-- Grid column -->
-                <!-- image of dog in the footer -->
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
-                        <img src="./images/dog.jpeg" style="width:100px; height:30vh" class="w-100" />
-                        <a href="#!">
-                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
-                        </a>
-                    </div>
-                </div>
+            <!-- Base of the footer -->
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2023 Copyright:
+                <a class="text-white" href="https://mdbootstrap.com/">Aaditya Acharya</a>
             </div>
-        </div>
-        <!-- Base of the footer -->
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2023 Copyright:
-            <a class="text-white" href="https://mdbootstrap.com/">Aaditya Acharya</a>
-        </div>
-        <!-- Copyright -->
-    </footer>
-    <!-- Footer Ends-->
-    <!-- Bootstrap jQuery, popper and JS -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
-        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
-        crossorigin="anonymous"></script>
-    <!-- external JS page -->
-    <script src="test.js"></script>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer Ends-->
+        <!-- Bootstrap jQuery, popper and JS -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+            integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+            crossorigin="anonymous"></script>
+        <script src="test.js"></script>
 </body>
 
 </html>

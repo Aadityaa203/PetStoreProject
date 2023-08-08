@@ -14,11 +14,12 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- External CSS page -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 </head>
 
-<body>
-    <nav id="top-navbar" class="navbar bg-secondary navbar-expand-lg navbar-light p-3">
-        <a class="navbar-brand" href="#">Home</a>
+<body onload="checkNumbersOfVisitors()">
+    <nav id="top-navbar" class="navbar navbar-expand-lg navbar-light p-2">
+        <a class="navbar-brand" href="#home">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -27,25 +28,25 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#aboutUs">About Us <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="./aboutus.html">About us <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link" href="./services.html">Services</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        View More
+                        Dropdown
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#products">products</a>
-                        <a class="dropdown-item" href="#services">Services</a>
-                        <a class="dropdown-item" href="#adoption">Adoption</a>
+                        <a class="dropdown-item" href="./adoption.html">Adoption</a>
+                        <a class="dropdown-item" href="./products.html">Products</a>
+                        <a class="dropdown-item" href="./contact.html">Contacts</a>
                     </div>
                 </li>
             </ul>
             <div class="logo-name">
-                <h1>Happy Pets Store</h1>
+                <h1 class="text-bold text-white text-uppercase">Happy Pets Store</h1>
             </div>
             <form action="./index.html" class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -54,47 +55,46 @@
         </div>
     </nav>
     <!-- nav Ends here -->
-    <!-- main body starts here -->
 
-    <!-- home starts here -->
-    <div class="container-fluid m-2 p-2" id="home">
-        <div class="home-background">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="text-bold"> <span class="welcome"> Welcome </span>to our pet store, where tails wag and
-                        purrs abound! At <span class="bg-info"> Happy Pets Store</span>, we are passionate
-                        about providing the best products and services for your beloved furry friends. Our homepage is a
-                        gateway to a world of delightful pet experiences, offering a glimpse of the love and care we
-                        shower
-                        upon our adorable companions. Feast your eyes on a captivating gallery of both dogs and cats,
-                        eagerly waiting for their forever homes. </p>
-                    <p> Explore our wide selection of high-quality pet food,
-                        toys,
-                        and accessories, specially curated to meet the unique needs of your cherished companions.
-                        Whether
-                        you're a doting dog owner or a devoted cat parent, we have everything you need to make your
-                        pets'
-                        lives happier, healthier, and more fulfilling. Join us on this journey of wagging tails,
-                        contented
-                        purrs, and boundless pet happiness. Welcome to our pet-loving family!
-                    </p>
-                </div>
-            </div>
+
+    <!-- main body starts here -->
+    <div class="main-body">
+        <!-- home starts here -->
+        <div id="home">
+            <p> <span class="welcome p1"> Welcome to our happy pet store,</span> where tails swag and
+                purrs abound! At Happy Pets Store, we are passionate
+                about providing the best products and services for your beloved furry friends. Our homepage
+                is a
+                gateway to a world of delightful pet experiences, offering a glimpse of the love and care
+                weshower
+                upon our adorable companions. Feast your eyes on a captivating gallery of both dogs and
+                cats,
+                eagerly waiting for their forever homes.
+            </p>
+            <p> <span class="p1">Explore </span>our wide selection of high-quality pet food,toys,
+                and accessories, specially curated to meet the unique needs of your cherished companions.
+                Whether
+                you're a doting dog owner or a devoted cat parent, we have everything you need to make your
+                pets'
+                lives happier, healthier, and more fulfilling. Join us on this journey of wagging tails,
+                contented
+                purrs, and boundless pet happiness. Welcome to our pet-loving family!
+            </p>
+            <br>
             <!-- table of what services we offer starts here -->
             <!-- Section: Text -->
-            <h4 class="text-uppercase">Hey, Check What do we offer here!</h4>
-            <!-- Section: Text -->
+            <h4 class="text-uppercase text-center h4">Services we offer here!</h4>
             <div class="table">
                 <table class="table table-sm">
-                    <thead>
+                    <thead class="table-success">
                         <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Service</th>
-                            <th scope="col">Products</th>
-                            <th scope="col">Adoption</th>
+                            <th scope="col-md">#</th>
+                            <th scope="col-md">Service</th>
+                            <th scope="col-md">Products</th>
+                            <th scope="col-md">Adoption</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="table-secondary">
                         <tr>
                             <th scope="row">1</th>
                             <td>Training</td>
@@ -116,32 +116,33 @@
                     </tbody>
                 </table>
             </div>
-        </div>
-        <!-- Cute images of some cats and dogs -->
-        <div class="text-center mt-3">
-            <h3>Here are some of our cute companions</h3>
-        </div>
-        <div class="row">
-            <div class="col-md-3">
-                <img src="./images/homeimage1.avif" alt="" style="height: 20vh; width:100%">
+
+            <br>
+            <!-- Cute images of some cats and dogs -->
+            <div class="text-center ">
+                <h4 class="text-uppercase text-center h4">Here are some of our FEATURED cute companions</h4>
             </div>
-            <div class="col-md-3">
-                <img src="./images/homeimage2.avif" alt="" style="height: 20vh; width:100%">
-            </div>
-            <div class="col-md-3">
-                <img src="./images/homeimage3.avif" alt="" style="height: 20vh; width:100%">
-            </div>
-            <div class="col-md-3">
-                <img src="./images/homeimage4.avif" alt="" style="height: 20vh; width:100%">
+            <div class="row">
+                <div class="col-md">
+                    <img src="./images/homeimage/homeimage1.avif" alt="" style="height: 40vh; width:100%">
+                </div>
+                <div class="col-md">
+                    <img src="./images/homeimage/homeimage2.avif" alt="" style="height: 40vh; width:100%">
+                </div>
+                <div class="col-md">
+                    <img src="./images/homeimage/homeimage3.avif" alt="" style="height: 40vh; width:100%">
+                </div>
+                <div class="col-md">
+                    <img src="./images/homeimage/homeimage4.avif" alt="" style="height: 40vh; width:100%">
+                </div>
             </div>
         </div>
     </div>
-
+    <hr>
     <!-- Footer -->
-    <footer id="footer" class="bg-secondary text-center text-white mt-3">
+    <footer id="footer" class="text-center mt-3">
         <!-- Grid container -->
-        <div class="container p-2">
-
+        <div class="footer-container mt-2 p-3">
             <!-- Section: Links -->
             <section class="">
                 <!--Grid row-->
@@ -181,10 +182,7 @@
             <div class="row">
                 <div class="col-md-4 mb-4 mb-md-0">
                     <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
-                        <img src="./images/cat3.avif" style="width:100px; height:30vh" class="w-100" />
-                        <a href="#!">
-                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
-                        </a>
+                        <img src="./images/footer-image/cat and dog1.webp" style="width:400px; height:24vh;" />
                     </div>
                 </div>
                 <!-- Grid column -->
@@ -229,10 +227,7 @@
                 <!-- image of dog in the footer -->
                 <div class="col-md-4 mb-4 mb-md-0">
                     <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
-                        <img src="./images/dog.jpeg" style="width:100px; height:30vh" class="w-100" />
-                        <a href="#!">
-                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
-                        </a>
+                        <img src="./images/footer-image/cat and dog.jpeg" style="width:400px; height:24vh;" />
                     </div>
                 </div>
             </div>
@@ -256,7 +251,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
         crossorigin="anonymous"></script>
-    <!-- external JS page -->
     <script src="test.js"></script>
 </body>
 

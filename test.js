@@ -1,3 +1,6 @@
+// For this portion of your pet store I'm going to provide a template of the JavaScript to display your images from an array. It's going to be your job to fill in the missing portions to get those images displayed to the page. Each item inside of your array should have at least three keys to access. They're going to be title, image, and price.
+// https://github.com/rmtkable/petStoreChallengeJS
+
 var products = [
   {
     title: "Cat Chew Set",
@@ -35,3 +38,14 @@ for (var i = 0; i < products.length; i++) {
   postHTML = postHTML + concatThis;
 }
 document.getElementById("jsProducts").innerHTML = postHTML;
+
+//  The third person who visit MY store’s landing page each day should receive a message that they have won a $50 gift card
+let visitorCount = 0;
+function checkNumbersOfVisitors() {
+  visitorCount++;
+
+  if (visitorCount === 3) {
+    alert("Hey Congratulations!, you are the winner of $50 gift card");
+  }
+}
+console.log("Total Visitors: " + visitorCount);
