@@ -49,3 +49,17 @@ function checkNumbersOfVisitors() {
   }
 }
 console.log("Total Visitors: " + visitorCount);
+
+// 10. Your contact page should have a form to submit a message, on submit the page should console.log the person’s message, and e-mail address
+
+const submitButton = document.getElementById("submit-button");
+
+submitButton.addEventListener("click", function () {
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  console.log("Name:", name);
+  console.log("Email:", email);
+  console.log("Message:", message);
+});

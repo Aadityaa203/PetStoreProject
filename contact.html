@@ -80,13 +80,16 @@
                                 <h3 class="text-center text-uppercase">contact us for any inquiry</h3> Questions/
                                 Comments/ Feedbacks?
                             </label><br>
+                            <label for="name">Full Name:</label><br>
+                            <input type="text" id="name" name="name" placeholder="FullName"><br>
                             <label for="exampleInputEmail1">Enter your email</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Enter email">
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                placeholder="Enter email">
                             <small id="emailHelp" class="form-text text-dark">We'll never share your email with
                                 anyone else.</small>
                             <label for="exampleFormControlTextarea1">Example textarea</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <textarea class="form-control" id="message" rows="3"
+                                placeholder="write your message here"></textarea>
                             <div class="form-check">
                                 <div class="container-fluid m-2">
                                     <div class="row">
@@ -102,12 +105,11 @@
                                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                             <label class="form-check-label" for="exampleCheck1">Feedbacks?</label>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
                             <div class="text-center">
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button id="submit-button" type="button" class="btn btn-primary">Submit</button>
                             </div>
                         </div>
                     </form>
