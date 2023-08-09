@@ -269,3 +269,23 @@ blockquote {
     width: 100%; /* Single item in a row */
   }
 }
+
+/* JavaScript Adoption certificate image */
+#showContent {
+  background-color: #e90a0a;
+  font-size: 24px;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 7px;
+}
+
+/*  Using JS to make carasole to slide image itself  */
+div #imageSlider img {
+  height: 50vh;
+  width: 50%;
+}
+
+.img-flip {
+  display: flex;
+  justify-content: center;
+}

@@ -63,3 +63,38 @@ submitButton.addEventListener("click", function () {
   console.log("Email:", email);
   console.log("Message:", message);
 });
+
+// Adoption certificate using JS
+const showButton = document.getElementById("showContent");
+const hiddenContent = document.getElementById("hiddenContent");
+
+showButton.addEventListener("click", function () {
+  if (hiddenContent.style.display === "none") {
+    hiddenContent.style.display = "block";
+    showButton.textContent = "Hide Certificate";
+  } else {
+    hiddenContent.style.display = "none";
+    showButton.textContent = "Show Certificate";
+  }
+});
+
+// carousel in homepage using JS
+const images = document.querySelectorAll("#imageSlider img");
+let currentImageIndex = 0;
+
+function showImage(index) {
+  images.forEach((image, i) => {
+    if (i === index) {
+      image.style.display = "block";
+    } else {
+      image.style.display = "none";
+    }
+  });
+}
+function showNextImage() {
+  currentImageIndex = (currentImageIndex + 1) % images.length;
+  showImage(currentImageIndex);
+}
+setInterval(showNextImage, 1000); // Slide every 3 seconds
+// Initially show the first image
+showImage(currentImageIndex);
