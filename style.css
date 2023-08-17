@@ -282,10 +282,16 @@ blockquote {
 /*  Using JS to make carasole to slide image itself  */
 div #imageSlider img {
   height: 50vh;
-  width: 50%;
+  width: 100%;
 }
 
 .img-flip {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
+}
+
+/* Bootstrap carousel */
+img {
+  height: 50vh;
+  width: 100%;
 }

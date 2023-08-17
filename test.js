@@ -95,6 +95,6 @@ function showNextImage() {
   currentImageIndex = (currentImageIndex + 1) % images.length;
   showImage(currentImageIndex);
 }
-setInterval(showNextImage, 1000); // Slide every 3 seconds
+setInterval(showNextImage, 2000); // Slide every 3 seconds
 // Initially show the first image
 showImage(currentImageIndex);
